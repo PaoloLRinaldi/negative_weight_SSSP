@@ -1,0 +1,2 @@
+timestamp,alg_goal,exp_type,alg_name,filename,source,reps,use_lazy,init_kappa,k_factor,rand_label,fixdagedges,cutedges,rec_limit,cutedgesseed,diam_apprx,ol_seed,il_seed,eg_sort_scc,avg_time,std,min,max,n,m,exp_name
+2024-06-18 16:39:30,SSSP,time,BCF,../data/graphs/shift_aug_gor_5e6.txt,0,1,1,0,1,0,1,1,100,221,0,222,223,0,103130,0,103130,103130,555402,5554078,shift_bcf_3_2

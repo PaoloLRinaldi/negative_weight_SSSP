@@ -1,0 +1,462 @@
+# launch with:
+# cat ../data/queries/norm_bcf_vs_gor_queries.txt | parallel -j 4 {}
+
+# GOR
+
+# BFCT
+
+python3 exec_query.py nbvg_gor_bfct_1_1 "SSSP time GOR ../data/graphs/big_aug_bfct_5e5.txt 0 1"
+python3 exec_query.py nbvg_gor_bfct_2_1 "SSSP time GOR ../data/graphs/big_aug_bfct_5e5_v2.txt 0 1"
+python3 exec_query.py nbvg_gor_bfct_3_1 "SSSP time GOR ../data/graphs/big_aug_bfct_5e5_v3.txt 0 1"
+python3 exec_query.py nbvg_gor_bfct_4_1 "SSSP time GOR ../data/graphs/big_aug_bfct_5e5_v4.txt 0 1"
+python3 exec_query.py nbvg_gor_bfct_5_1 "SSSP time GOR ../data/graphs/big_aug_bfct_5e5_v5.txt 0 1"
+
+python3 exec_query.py nbvg_gor_bfct_1_2 "SSSP time GOR ../data/graphs/big_aug_bfct_1e6.txt 0 1"
+python3 exec_query.py nbvg_gor_bfct_2_2 "SSSP time GOR ../data/graphs/big_aug_bfct_1e6_v2.txt 0 1"
+python3 exec_query.py nbvg_gor_bfct_3_2 "SSSP time GOR ../data/graphs/big_aug_bfct_1e6_v3.txt 0 1"
+python3 exec_query.py nbvg_gor_bfct_4_2 "SSSP time GOR ../data/graphs/big_aug_bfct_1e6_v4.txt 0 1"
+python3 exec_query.py nbvg_gor_bfct_5_2 "SSSP time GOR ../data/graphs/big_aug_bfct_1e6_v5.txt 0 1"
+
+python3 exec_query.py nbvg_gor_bfct_1_3 "SSSP time GOR ../data/graphs/big_aug_bfct_2e6.txt 0 1"
+python3 exec_query.py nbvg_gor_bfct_2_3 "SSSP time GOR ../data/graphs/big_aug_bfct_2e6_v2.txt 0 1"
+python3 exec_query.py nbvg_gor_bfct_3_3 "SSSP time GOR ../data/graphs/big_aug_bfct_2e6_v3.txt 0 1"
+python3 exec_query.py nbvg_gor_bfct_4_3 "SSSP time GOR ../data/graphs/big_aug_bfct_2e6_v4.txt 0 1"
+python3 exec_query.py nbvg_gor_bfct_5_3 "SSSP time GOR ../data/graphs/big_aug_bfct_2e6_v5.txt 0 1"
+
+python3 exec_query.py nbvg_gor_bfct_1_4 "SSSP time GOR ../data/graphs/big_aug_bfct_5e6.txt 0 1"
+python3 exec_query.py nbvg_gor_bfct_2_4 "SSSP time GOR ../data/graphs/big_aug_bfct_5e6_v2.txt 0 1"
+python3 exec_query.py nbvg_gor_bfct_3_4 "SSSP time GOR ../data/graphs/big_aug_bfct_5e6_v3.txt 0 1"
+python3 exec_query.py nbvg_gor_bfct_4_4 "SSSP time GOR ../data/graphs/big_aug_bfct_5e6_v4.txt 0 1"
+python3 exec_query.py nbvg_gor_bfct_5_4 "SSSP time GOR ../data/graphs/big_aug_bfct_5e6_v5.txt 0 1"
+
+python3 exec_query.py nbvg_gor_bfct_1_5 "SSSP time GOR ../data/graphs/big_aug_bfct_1e7.txt 0 1"
+python3 exec_query.py nbvg_gor_bfct_2_5 "SSSP time GOR ../data/graphs/big_aug_bfct_1e7_v2.txt 0 1"
+python3 exec_query.py nbvg_gor_bfct_3_5 "SSSP time GOR ../data/graphs/big_aug_bfct_1e7_v3.txt 0 1"
+python3 exec_query.py nbvg_gor_bfct_4_5 "SSSP time GOR ../data/graphs/big_aug_bfct_1e7_v4.txt 0 1"
+python3 exec_query.py nbvg_gor_bfct_5_5 "SSSP time GOR ../data/graphs/big_aug_bfct_1e7_v5.txt 0 1"
+
+python3 exec_query.py nbvg_gor_bfct_1_6 "SSSP time GOR ../data/graphs/big_aug_bfct_2e7.txt 0 1"
+python3 exec_query.py nbvg_gor_bfct_2_6 "SSSP time GOR ../data/graphs/big_aug_bfct_2e7_v2.txt 0 1"
+python3 exec_query.py nbvg_gor_bfct_3_6 "SSSP time GOR ../data/graphs/big_aug_bfct_2e7_v3.txt 0 1"
+python3 exec_query.py nbvg_gor_bfct_4_6 "SSSP time GOR ../data/graphs/big_aug_bfct_2e7_v4.txt 0 1"
+python3 exec_query.py nbvg_gor_bfct_5_6 "SSSP time GOR ../data/graphs/big_aug_bfct_2e7_v5.txt 0 1"
+
+# DFS
+
+python3 exec_query.py nbvg_gor_dfs_1_1 "SSSP time GOR ../data/graphs/big_aug_dfs_5e5.txt 0 1"
+python3 exec_query.py nbvg_gor_dfs_2_1 "SSSP time GOR ../data/graphs/big_aug_dfs_5e5_v2.txt 0 1"
+python3 exec_query.py nbvg_gor_dfs_3_1 "SSSP time GOR ../data/graphs/big_aug_dfs_5e5_v3.txt 0 1"
+python3 exec_query.py nbvg_gor_dfs_4_1 "SSSP time GOR ../data/graphs/big_aug_dfs_5e5_v4.txt 0 1"
+python3 exec_query.py nbvg_gor_dfs_5_1 "SSSP time GOR ../data/graphs/big_aug_dfs_5e5_v5.txt 0 1"
+
+python3 exec_query.py nbvg_gor_dfs_1_2 "SSSP time GOR ../data/graphs/big_aug_dfs_1e6.txt 0 1"
+python3 exec_query.py nbvg_gor_dfs_2_2 "SSSP time GOR ../data/graphs/big_aug_dfs_1e6_v2.txt 0 1"
+python3 exec_query.py nbvg_gor_dfs_3_2 "SSSP time GOR ../data/graphs/big_aug_dfs_1e6_v3.txt 0 1"
+python3 exec_query.py nbvg_gor_dfs_4_2 "SSSP time GOR ../data/graphs/big_aug_dfs_1e6_v4.txt 0 1"
+python3 exec_query.py nbvg_gor_dfs_5_2 "SSSP time GOR ../data/graphs/big_aug_dfs_1e6_v5.txt 0 1"
+
+python3 exec_query.py nbvg_gor_dfs_1_3 "SSSP time GOR ../data/graphs/big_aug_dfs_2e6.txt 0 1"
+python3 exec_query.py nbvg_gor_dfs_2_3 "SSSP time GOR ../data/graphs/big_aug_dfs_2e6_v2.txt 0 1"
+python3 exec_query.py nbvg_gor_dfs_3_3 "SSSP time GOR ../data/graphs/big_aug_dfs_2e6_v3.txt 0 1"
+python3 exec_query.py nbvg_gor_dfs_4_3 "SSSP time GOR ../data/graphs/big_aug_dfs_2e6_v4.txt 0 1"
+python3 exec_query.py nbvg_gor_dfs_5_3 "SSSP time GOR ../data/graphs/big_aug_dfs_2e6_v5.txt 0 1"
+
+python3 exec_query.py nbvg_gor_dfs_1_4 "SSSP time GOR ../data/graphs/big_aug_dfs_5e6.txt 0 1"
+python3 exec_query.py nbvg_gor_dfs_2_4 "SSSP time GOR ../data/graphs/big_aug_dfs_5e6_v2.txt 0 1"
+python3 exec_query.py nbvg_gor_dfs_3_4 "SSSP time GOR ../data/graphs/big_aug_dfs_5e6_v3.txt 0 1"
+python3 exec_query.py nbvg_gor_dfs_4_4 "SSSP time GOR ../data/graphs/big_aug_dfs_5e6_v4.txt 0 1"
+python3 exec_query.py nbvg_gor_dfs_5_4 "SSSP time GOR ../data/graphs/big_aug_dfs_5e6_v5.txt 0 1"
+
+python3 exec_query.py nbvg_gor_dfs_1_5 "SSSP time GOR ../data/graphs/big_aug_dfs_1e7.txt 0 1"
+python3 exec_query.py nbvg_gor_dfs_2_5 "SSSP time GOR ../data/graphs/big_aug_dfs_1e7_v2.txt 0 1"
+python3 exec_query.py nbvg_gor_dfs_3_5 "SSSP time GOR ../data/graphs/big_aug_dfs_1e7_v3.txt 0 1"
+python3 exec_query.py nbvg_gor_dfs_4_5 "SSSP time GOR ../data/graphs/big_aug_dfs_1e7_v4.txt 0 1"
+python3 exec_query.py nbvg_gor_dfs_5_5 "SSSP time GOR ../data/graphs/big_aug_dfs_1e7_v5.txt 0 1"
+
+python3 exec_query.py nbvg_gor_dfs_1_6 "SSSP time GOR ../data/graphs/big_aug_dfs_2e7.txt 0 1"
+python3 exec_query.py nbvg_gor_dfs_2_6 "SSSP time GOR ../data/graphs/big_aug_dfs_2e7_v2.txt 0 1"
+python3 exec_query.py nbvg_gor_dfs_3_6 "SSSP time GOR ../data/graphs/big_aug_dfs_2e7_v3.txt 0 1"
+python3 exec_query.py nbvg_gor_dfs_4_6 "SSSP time GOR ../data/graphs/big_aug_dfs_2e7_v4.txt 0 1"
+python3 exec_query.py nbvg_gor_dfs_5_6 "SSSP time GOR ../data/graphs/big_aug_dfs_2e7_v5.txt 0 1"
+
+# RD1
+
+python3 exec_query.py nbvg_gor_rd1_1_1 "SSSP time GOR ../data/graphs/big_aug_rd1_5e5.txt 0 1"
+python3 exec_query.py nbvg_gor_rd1_2_1 "SSSP time GOR ../data/graphs/big_aug_rd1_5e5_v2.txt 0 1"
+python3 exec_query.py nbvg_gor_rd1_3_1 "SSSP time GOR ../data/graphs/big_aug_rd1_5e5_v3.txt 0 1"
+python3 exec_query.py nbvg_gor_rd1_4_1 "SSSP time GOR ../data/graphs/big_aug_rd1_5e5_v4.txt 0 1"
+python3 exec_query.py nbvg_gor_rd1_5_1 "SSSP time GOR ../data/graphs/big_aug_rd1_5e5_v5.txt 0 1"
+
+python3 exec_query.py nbvg_gor_rd1_1_2 "SSSP time GOR ../data/graphs/big_aug_rd1_1e6.txt 0 1"
+python3 exec_query.py nbvg_gor_rd1_2_2 "SSSP time GOR ../data/graphs/big_aug_rd1_1e6_v2.txt 0 1"
+python3 exec_query.py nbvg_gor_rd1_3_2 "SSSP time GOR ../data/graphs/big_aug_rd1_1e6_v3.txt 0 1"
+python3 exec_query.py nbvg_gor_rd1_4_2 "SSSP time GOR ../data/graphs/big_aug_rd1_1e6_v4.txt 0 1"
+python3 exec_query.py nbvg_gor_rd1_5_2 "SSSP time GOR ../data/graphs/big_aug_rd1_1e6_v5.txt 0 1"
+
+python3 exec_query.py nbvg_gor_rd1_1_3 "SSSP time GOR ../data/graphs/big_aug_rd1_2e6.txt 0 1"
+python3 exec_query.py nbvg_gor_rd1_2_3 "SSSP time GOR ../data/graphs/big_aug_rd1_2e6_v2.txt 0 1"
+python3 exec_query.py nbvg_gor_rd1_3_3 "SSSP time GOR ../data/graphs/big_aug_rd1_2e6_v3.txt 0 1"
+python3 exec_query.py nbvg_gor_rd1_4_3 "SSSP time GOR ../data/graphs/big_aug_rd1_2e6_v4.txt 0 1"
+python3 exec_query.py nbvg_gor_rd1_5_3 "SSSP time GOR ../data/graphs/big_aug_rd1_2e6_v5.txt 0 1"
+
+python3 exec_query.py nbvg_gor_rd1_1_4 "SSSP time GOR ../data/graphs/big_aug_rd1_5e6.txt 0 1"
+python3 exec_query.py nbvg_gor_rd1_2_4 "SSSP time GOR ../data/graphs/big_aug_rd1_5e6_v2.txt 0 1"
+python3 exec_query.py nbvg_gor_rd1_3_4 "SSSP time GOR ../data/graphs/big_aug_rd1_5e6_v3.txt 0 1"
+python3 exec_query.py nbvg_gor_rd1_4_4 "SSSP time GOR ../data/graphs/big_aug_rd1_5e6_v4.txt 0 1"
+python3 exec_query.py nbvg_gor_rd1_5_4 "SSSP time GOR ../data/graphs/big_aug_rd1_5e6_v5.txt 0 1"
+
+python3 exec_query.py nbvg_gor_rd1_1_5 "SSSP time GOR ../data/graphs/big_aug_rd1_1e7.txt 0 1"
+python3 exec_query.py nbvg_gor_rd1_2_5 "SSSP time GOR ../data/graphs/big_aug_rd1_1e7_v2.txt 0 1"
+python3 exec_query.py nbvg_gor_rd1_3_5 "SSSP time GOR ../data/graphs/big_aug_rd1_1e7_v3.txt 0 1"
+python3 exec_query.py nbvg_gor_rd1_4_5 "SSSP time GOR ../data/graphs/big_aug_rd1_1e7_v4.txt 0 1"
+python3 exec_query.py nbvg_gor_rd1_5_5 "SSSP time GOR ../data/graphs/big_aug_rd1_1e7_v5.txt 0 1"
+
+python3 exec_query.py nbvg_gor_rd1_1_6 "SSSP time GOR ../data/graphs/big_aug_rd1_2e7.txt 0 1"
+python3 exec_query.py nbvg_gor_rd1_2_6 "SSSP time GOR ../data/graphs/big_aug_rd1_2e7_v2.txt 0 1"
+python3 exec_query.py nbvg_gor_rd1_3_6 "SSSP time GOR ../data/graphs/big_aug_rd1_2e7_v3.txt 0 1"
+python3 exec_query.py nbvg_gor_rd1_4_6 "SSSP time GOR ../data/graphs/big_aug_rd1_2e7_v4.txt 0 1"
+python3 exec_query.py nbvg_gor_rd1_5_6 "SSSP time GOR ../data/graphs/big_aug_rd1_2e7_v5.txt 0 1"
+
+# RD2
+
+python3 exec_query.py nbvg_gor_rd2_1_1 "SSSP time GOR ../data/graphs/big_aug_rd2_5e5.txt 0 1"
+python3 exec_query.py nbvg_gor_rd2_2_1 "SSSP time GOR ../data/graphs/big_aug_rd2_5e5_v2.txt 0 1"
+python3 exec_query.py nbvg_gor_rd2_3_1 "SSSP time GOR ../data/graphs/big_aug_rd2_5e5_v3.txt 0 1"
+python3 exec_query.py nbvg_gor_rd2_4_1 "SSSP time GOR ../data/graphs/big_aug_rd2_5e5_v4.txt 0 1"
+python3 exec_query.py nbvg_gor_rd2_5_1 "SSSP time GOR ../data/graphs/big_aug_rd2_5e5_v5.txt 0 1"
+
+python3 exec_query.py nbvg_gor_rd2_1_2 "SSSP time GOR ../data/graphs/big_aug_rd2_1e6.txt 0 1"
+python3 exec_query.py nbvg_gor_rd2_2_2 "SSSP time GOR ../data/graphs/big_aug_rd2_1e6_v2.txt 0 1"
+python3 exec_query.py nbvg_gor_rd2_3_2 "SSSP time GOR ../data/graphs/big_aug_rd2_1e6_v3.txt 0 1"
+python3 exec_query.py nbvg_gor_rd2_4_2 "SSSP time GOR ../data/graphs/big_aug_rd2_1e6_v4.txt 0 1"
+python3 exec_query.py nbvg_gor_rd2_5_2 "SSSP time GOR ../data/graphs/big_aug_rd2_1e6_v5.txt 0 1"
+
+python3 exec_query.py nbvg_gor_rd2_1_3 "SSSP time GOR ../data/graphs/big_aug_rd2_2e6.txt 0 1"
+python3 exec_query.py nbvg_gor_rd2_2_3 "SSSP time GOR ../data/graphs/big_aug_rd2_2e6_v2.txt 0 1"
+python3 exec_query.py nbvg_gor_rd2_3_3 "SSSP time GOR ../data/graphs/big_aug_rd2_2e6_v3.txt 0 1"
+python3 exec_query.py nbvg_gor_rd2_4_3 "SSSP time GOR ../data/graphs/big_aug_rd2_2e6_v4.txt 0 1"
+python3 exec_query.py nbvg_gor_rd2_5_3 "SSSP time GOR ../data/graphs/big_aug_rd2_2e6_v5.txt 0 1"
+
+python3 exec_query.py nbvg_gor_rd2_1_4 "SSSP time GOR ../data/graphs/big_aug_rd2_5e6.txt 0 1"
+python3 exec_query.py nbvg_gor_rd2_2_4 "SSSP time GOR ../data/graphs/big_aug_rd2_5e6_v2.txt 0 1"
+python3 exec_query.py nbvg_gor_rd2_3_4 "SSSP time GOR ../data/graphs/big_aug_rd2_5e6_v3.txt 0 1"
+python3 exec_query.py nbvg_gor_rd2_4_4 "SSSP time GOR ../data/graphs/big_aug_rd2_5e6_v4.txt 0 1"
+python3 exec_query.py nbvg_gor_rd2_5_4 "SSSP time GOR ../data/graphs/big_aug_rd2_5e6_v5.txt 0 1"
+
+python3 exec_query.py nbvg_gor_rd2_1_5 "SSSP time GOR ../data/graphs/big_aug_rd2_1e7.txt 0 1"
+python3 exec_query.py nbvg_gor_rd2_2_5 "SSSP time GOR ../data/graphs/big_aug_rd2_1e7_v2.txt 0 1"
+python3 exec_query.py nbvg_gor_rd2_3_5 "SSSP time GOR ../data/graphs/big_aug_rd2_1e7_v3.txt 0 1"
+python3 exec_query.py nbvg_gor_rd2_4_5 "SSSP time GOR ../data/graphs/big_aug_rd2_1e7_v4.txt 0 1"
+python3 exec_query.py nbvg_gor_rd2_5_5 "SSSP time GOR ../data/graphs/big_aug_rd2_1e7_v5.txt 0 1"
+
+python3 exec_query.py nbvg_gor_rd2_1_6 "SSSP time GOR ../data/graphs/big_aug_rd2_2e7.txt 0 1"
+python3 exec_query.py nbvg_gor_rd2_2_6 "SSSP time GOR ../data/graphs/big_aug_rd2_2e7_v2.txt 0 1"
+python3 exec_query.py nbvg_gor_rd2_3_6 "SSSP time GOR ../data/graphs/big_aug_rd2_2e7_v3.txt 0 1"
+python3 exec_query.py nbvg_gor_rd2_4_6 "SSSP time GOR ../data/graphs/big_aug_rd2_2e7_v4.txt 0 1"
+python3 exec_query.py nbvg_gor_rd2_5_6 "SSSP time GOR ../data/graphs/big_aug_rd2_2e7_v5.txt 0 1"
+
+# GOR
+
+python3 exec_query.py nbvg_gor_gor_1_1 "SSSP time GOR ../data/graphs/big_aug_gor_5e5.txt 0 1"
+python3 exec_query.py nbvg_gor_gor_2_1 "SSSP time GOR ../data/graphs/big_aug_gor_5e5_v2.txt 0 1"
+python3 exec_query.py nbvg_gor_gor_3_1 "SSSP time GOR ../data/graphs/big_aug_gor_5e5_v3.txt 0 1"
+python3 exec_query.py nbvg_gor_gor_4_1 "SSSP time GOR ../data/graphs/big_aug_gor_5e5_v4.txt 0 1"
+python3 exec_query.py nbvg_gor_gor_5_1 "SSSP time GOR ../data/graphs/big_aug_gor_5e5_v5.txt 0 1"
+
+python3 exec_query.py nbvg_gor_gor_1_2 "SSSP time GOR ../data/graphs/big_aug_gor_1e6.txt 0 1"
+python3 exec_query.py nbvg_gor_gor_2_2 "SSSP time GOR ../data/graphs/big_aug_gor_1e6_v2.txt 0 1"
+python3 exec_query.py nbvg_gor_gor_3_2 "SSSP time GOR ../data/graphs/big_aug_gor_1e6_v3.txt 0 1"
+python3 exec_query.py nbvg_gor_gor_4_2 "SSSP time GOR ../data/graphs/big_aug_gor_1e6_v4.txt 0 1"
+python3 exec_query.py nbvg_gor_gor_5_2 "SSSP time GOR ../data/graphs/big_aug_gor_1e6_v5.txt 0 1"
+
+python3 exec_query.py nbvg_gor_gor_1_3 "SSSP time GOR ../data/graphs/big_aug_gor_2e6.txt 0 1"
+python3 exec_query.py nbvg_gor_gor_2_3 "SSSP time GOR ../data/graphs/big_aug_gor_2e6_v2.txt 0 1"
+python3 exec_query.py nbvg_gor_gor_3_3 "SSSP time GOR ../data/graphs/big_aug_gor_2e6_v3.txt 0 1"
+python3 exec_query.py nbvg_gor_gor_4_3 "SSSP time GOR ../data/graphs/big_aug_gor_2e6_v4.txt 0 1"
+python3 exec_query.py nbvg_gor_gor_5_3 "SSSP time GOR ../data/graphs/big_aug_gor_2e6_v5.txt 0 1"
+
+python3 exec_query.py nbvg_gor_gor_1_4 "SSSP time GOR ../data/graphs/big_aug_gor_5e6.txt 0 1"
+python3 exec_query.py nbvg_gor_gor_2_4 "SSSP time GOR ../data/graphs/big_aug_gor_5e6_v2.txt 0 1"
+python3 exec_query.py nbvg_gor_gor_3_4 "SSSP time GOR ../data/graphs/big_aug_gor_5e6_v3.txt 0 1"
+python3 exec_query.py nbvg_gor_gor_4_4 "SSSP time GOR ../data/graphs/big_aug_gor_5e6_v4.txt 0 1"
+python3 exec_query.py nbvg_gor_gor_5_4 "SSSP time GOR ../data/graphs/big_aug_gor_5e6_v5.txt 0 1"
+
+python3 exec_query.py nbvg_gor_gor_1_5 "SSSP time GOR ../data/graphs/big_aug_gor_1e7.txt 0 1"
+python3 exec_query.py nbvg_gor_gor_2_5 "SSSP time GOR ../data/graphs/big_aug_gor_1e7_v2.txt 0 1"
+python3 exec_query.py nbvg_gor_gor_3_5 "SSSP time GOR ../data/graphs/big_aug_gor_1e7_v3.txt 0 1"
+python3 exec_query.py nbvg_gor_gor_4_5 "SSSP time GOR ../data/graphs/big_aug_gor_1e7_v4.txt 0 1"
+python3 exec_query.py nbvg_gor_gor_5_5 "SSSP time GOR ../data/graphs/big_aug_gor_1e7_v5.txt 0 1"
+
+python3 exec_query.py nbvg_gor_gor_1_6 "SSSP time GOR ../data/graphs/big_aug_gor_2e7.txt 0 1"
+python3 exec_query.py nbvg_gor_gor_2_6 "SSSP time GOR ../data/graphs/big_aug_gor_2e7_v2.txt 0 1"
+python3 exec_query.py nbvg_gor_gor_3_6 "SSSP time GOR ../data/graphs/big_aug_gor_2e7_v3.txt 0 1"
+python3 exec_query.py nbvg_gor_gor_4_6 "SSSP time GOR ../data/graphs/big_aug_gor_2e7_v4.txt 0 1"
+python3 exec_query.py nbvg_gor_gor_5_6 "SSSP time GOR ../data/graphs/big_aug_gor_2e7_v5.txt 0 1"
+
+# RAND
+
+python3 exec_query.py nbvg_gor_rand_1_1 "SSSP time GOR ../data/graphs/big_rand_5e5.txt 0 1"
+python3 exec_query.py nbvg_gor_rand_2_1 "SSSP time GOR ../data/graphs/big_rand_5e5_v2.txt 0 1"
+python3 exec_query.py nbvg_gor_rand_3_1 "SSSP time GOR ../data/graphs/big_rand_5e5_v3.txt 0 1"
+python3 exec_query.py nbvg_gor_rand_4_1 "SSSP time GOR ../data/graphs/big_rand_5e5_v4.txt 0 1"
+python3 exec_query.py nbvg_gor_rand_5_1 "SSSP time GOR ../data/graphs/big_rand_5e5_v5.txt 0 1"
+
+python3 exec_query.py nbvg_gor_rand_1_2 "SSSP time GOR ../data/graphs/big_rand_1e6.txt 0 1"
+python3 exec_query.py nbvg_gor_rand_2_2 "SSSP time GOR ../data/graphs/big_rand_1e6_v2.txt 0 1"
+python3 exec_query.py nbvg_gor_rand_3_2 "SSSP time GOR ../data/graphs/big_rand_1e6_v3.txt 0 1"
+python3 exec_query.py nbvg_gor_rand_4_2 "SSSP time GOR ../data/graphs/big_rand_1e6_v4.txt 0 1"
+python3 exec_query.py nbvg_gor_rand_5_2 "SSSP time GOR ../data/graphs/big_rand_1e6_v5.txt 0 1"
+
+python3 exec_query.py nbvg_gor_rand_1_3 "SSSP time GOR ../data/graphs/big_rand_2e6.txt 0 1"
+python3 exec_query.py nbvg_gor_rand_2_3 "SSSP time GOR ../data/graphs/big_rand_2e6_v2.txt 0 1"
+python3 exec_query.py nbvg_gor_rand_3_3 "SSSP time GOR ../data/graphs/big_rand_2e6_v3.txt 0 1"
+python3 exec_query.py nbvg_gor_rand_4_3 "SSSP time GOR ../data/graphs/big_rand_2e6_v4.txt 0 1"
+python3 exec_query.py nbvg_gor_rand_5_3 "SSSP time GOR ../data/graphs/big_rand_2e6_v5.txt 0 1"
+
+python3 exec_query.py nbvg_gor_rand_1_4 "SSSP time GOR ../data/graphs/big_rand_5e6.txt 0 1"
+python3 exec_query.py nbvg_gor_rand_2_4 "SSSP time GOR ../data/graphs/big_rand_5e6_v2.txt 0 1"
+python3 exec_query.py nbvg_gor_rand_3_4 "SSSP time GOR ../data/graphs/big_rand_5e6_v3.txt 0 1"
+python3 exec_query.py nbvg_gor_rand_4_4 "SSSP time GOR ../data/graphs/big_rand_5e6_v4.txt 0 1"
+python3 exec_query.py nbvg_gor_rand_5_4 "SSSP time GOR ../data/graphs/big_rand_5e6_v5.txt 0 1"
+
+python3 exec_query.py nbvg_gor_rand_1_5 "SSSP time GOR ../data/graphs/big_rand_1e7.txt 0 1"
+python3 exec_query.py nbvg_gor_rand_2_5 "SSSP time GOR ../data/graphs/big_rand_1e7_v2.txt 0 1"
+python3 exec_query.py nbvg_gor_rand_3_5 "SSSP time GOR ../data/graphs/big_rand_1e7_v3.txt 0 1"
+python3 exec_query.py nbvg_gor_rand_4_5 "SSSP time GOR ../data/graphs/big_rand_1e7_v4.txt 0 1"
+python3 exec_query.py nbvg_gor_rand_5_5 "SSSP time GOR ../data/graphs/big_rand_1e7_v5.txt 0 1"
+
+python3 exec_query.py nbvg_gor_rand_1_6 "SSSP time GOR ../data/graphs/big_rand_2e7.txt 0 1"
+python3 exec_query.py nbvg_gor_rand_2_6 "SSSP time GOR ../data/graphs/big_rand_2e7_v2.txt 0 1"
+python3 exec_query.py nbvg_gor_rand_3_6 "SSSP time GOR ../data/graphs/big_rand_2e7_v3.txt 0 1"
+python3 exec_query.py nbvg_gor_rand_4_6 "SSSP time GOR ../data/graphs/big_rand_2e7_v4.txt 0 1"
+python3 exec_query.py nbvg_gor_rand_5_6 "SSSP time GOR ../data/graphs/big_rand_2e7_v5.txt 0 1"
+
+# BCF
+
+# BFCT
+
+python3 exec_query.py nbvg_bcf_bfct_1_1 "SSSP time BCF ../data/graphs/big_aug_bfct_5e5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_bfct_2_1 "SSSP time BCF ../data/graphs/big_aug_bfct_5e5_v2.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_bfct_3_1 "SSSP time BCF ../data/graphs/big_aug_bfct_5e5_v3.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_bfct_4_1 "SSSP time BCF ../data/graphs/big_aug_bfct_5e5_v4.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_bfct_5_1 "SSSP time BCF ../data/graphs/big_aug_bfct_5e5_v5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+
+python3 exec_query.py nbvg_bcf_bfct_1_2 "SSSP time BCF ../data/graphs/big_aug_bfct_1e6.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_bfct_2_2 "SSSP time BCF ../data/graphs/big_aug_bfct_1e6_v2.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_bfct_3_2 "SSSP time BCF ../data/graphs/big_aug_bfct_1e6_v3.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_bfct_4_2 "SSSP time BCF ../data/graphs/big_aug_bfct_1e6_v4.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_bfct_5_2 "SSSP time BCF ../data/graphs/big_aug_bfct_1e6_v5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+
+python3 exec_query.py nbvg_bcf_bfct_1_3 "SSSP time BCF ../data/graphs/big_aug_bfct_2e6.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_bfct_2_3 "SSSP time BCF ../data/graphs/big_aug_bfct_2e6_v2.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_bfct_3_3 "SSSP time BCF ../data/graphs/big_aug_bfct_2e6_v3.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_bfct_4_3 "SSSP time BCF ../data/graphs/big_aug_bfct_2e6_v4.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_bfct_5_3 "SSSP time BCF ../data/graphs/big_aug_bfct_2e6_v5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+
+python3 exec_query.py nbvg_bcf_bfct_1_4 "SSSP time BCF ../data/graphs/big_aug_bfct_5e6.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_bfct_2_4 "SSSP time BCF ../data/graphs/big_aug_bfct_5e6_v2.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_bfct_3_4 "SSSP time BCF ../data/graphs/big_aug_bfct_5e6_v3.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_bfct_4_4 "SSSP time BCF ../data/graphs/big_aug_bfct_5e6_v4.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_bfct_5_4 "SSSP time BCF ../data/graphs/big_aug_bfct_5e6_v5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+
+python3 exec_query.py nbvg_bcf_bfct_1_5 "SSSP time BCF ../data/graphs/big_aug_bfct_1e7.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_bfct_2_5 "SSSP time BCF ../data/graphs/big_aug_bfct_1e7_v2.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_bfct_3_5 "SSSP time BCF ../data/graphs/big_aug_bfct_1e7_v3.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_bfct_4_5 "SSSP time BCF ../data/graphs/big_aug_bfct_1e7_v4.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_bfct_5_5 "SSSP time BCF ../data/graphs/big_aug_bfct_1e7_v5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+
+python3 exec_query.py nbvg_bcf_bfct_1_6 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_bfct_2_6 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7_v2.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_bfct_3_6 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7_v3.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_bfct_4_6 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7_v4.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_bfct_5_6 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7_v5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+
+# DFS
+
+python3 exec_query.py nbvg_bcf_dfs_1_1 "SSSP time BCF ../data/graphs/big_aug_dfs_5e5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_dfs_2_1 "SSSP time BCF ../data/graphs/big_aug_dfs_5e5_v2.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_dfs_3_1 "SSSP time BCF ../data/graphs/big_aug_dfs_5e5_v3.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_dfs_4_1 "SSSP time BCF ../data/graphs/big_aug_dfs_5e5_v4.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_dfs_5_1 "SSSP time BCF ../data/graphs/big_aug_dfs_5e5_v5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+
+python3 exec_query.py nbvg_bcf_dfs_1_2 "SSSP time BCF ../data/graphs/big_aug_dfs_1e6.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_dfs_2_2 "SSSP time BCF ../data/graphs/big_aug_dfs_1e6_v2.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_dfs_3_2 "SSSP time BCF ../data/graphs/big_aug_dfs_1e6_v3.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_dfs_4_2 "SSSP time BCF ../data/graphs/big_aug_dfs_1e6_v4.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_dfs_5_2 "SSSP time BCF ../data/graphs/big_aug_dfs_1e6_v5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+
+python3 exec_query.py nbvg_bcf_dfs_1_3 "SSSP time BCF ../data/graphs/big_aug_dfs_2e6.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_dfs_2_3 "SSSP time BCF ../data/graphs/big_aug_dfs_2e6_v2.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_dfs_3_3 "SSSP time BCF ../data/graphs/big_aug_dfs_2e6_v3.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_dfs_4_3 "SSSP time BCF ../data/graphs/big_aug_dfs_2e6_v4.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_dfs_5_3 "SSSP time BCF ../data/graphs/big_aug_dfs_2e6_v5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+
+python3 exec_query.py nbvg_bcf_dfs_1_4 "SSSP time BCF ../data/graphs/big_aug_dfs_5e6.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_dfs_2_4 "SSSP time BCF ../data/graphs/big_aug_dfs_5e6_v2.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_dfs_3_4 "SSSP time BCF ../data/graphs/big_aug_dfs_5e6_v3.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_dfs_4_4 "SSSP time BCF ../data/graphs/big_aug_dfs_5e6_v4.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_dfs_5_4 "SSSP time BCF ../data/graphs/big_aug_dfs_5e6_v5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+
+python3 exec_query.py nbvg_bcf_dfs_1_5 "SSSP time BCF ../data/graphs/big_aug_dfs_1e7.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_dfs_2_5 "SSSP time BCF ../data/graphs/big_aug_dfs_1e7_v2.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_dfs_3_5 "SSSP time BCF ../data/graphs/big_aug_dfs_1e7_v3.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_dfs_4_5 "SSSP time BCF ../data/graphs/big_aug_dfs_1e7_v4.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_dfs_5_5 "SSSP time BCF ../data/graphs/big_aug_dfs_1e7_v5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+
+python3 exec_query.py nbvg_bcf_dfs_1_6 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_dfs_2_6 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7_v2.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_dfs_3_6 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7_v3.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_dfs_4_6 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7_v4.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_dfs_5_6 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7_v5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+
+# RD1
+
+python3 exec_query.py nbvg_bcf_rd1_1_1 "SSSP time BCF ../data/graphs/big_aug_rd1_5e5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd1_2_1 "SSSP time BCF ../data/graphs/big_aug_rd1_5e5_v2.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd1_3_1 "SSSP time BCF ../data/graphs/big_aug_rd1_5e5_v3.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd1_4_1 "SSSP time BCF ../data/graphs/big_aug_rd1_5e5_v4.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd1_5_1 "SSSP time BCF ../data/graphs/big_aug_rd1_5e5_v5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+
+python3 exec_query.py nbvg_bcf_rd1_1_2 "SSSP time BCF ../data/graphs/big_aug_rd1_1e6.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd1_2_2 "SSSP time BCF ../data/graphs/big_aug_rd1_1e6_v2.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd1_3_2 "SSSP time BCF ../data/graphs/big_aug_rd1_1e6_v3.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd1_4_2 "SSSP time BCF ../data/graphs/big_aug_rd1_1e6_v4.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd1_5_2 "SSSP time BCF ../data/graphs/big_aug_rd1_1e6_v5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+
+python3 exec_query.py nbvg_bcf_rd1_1_3 "SSSP time BCF ../data/graphs/big_aug_rd1_2e6.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd1_2_3 "SSSP time BCF ../data/graphs/big_aug_rd1_2e6_v2.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd1_3_3 "SSSP time BCF ../data/graphs/big_aug_rd1_2e6_v3.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd1_4_3 "SSSP time BCF ../data/graphs/big_aug_rd1_2e6_v4.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd1_5_3 "SSSP time BCF ../data/graphs/big_aug_rd1_2e6_v5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+
+python3 exec_query.py nbvg_bcf_rd1_1_4 "SSSP time BCF ../data/graphs/big_aug_rd1_5e6.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd1_2_4 "SSSP time BCF ../data/graphs/big_aug_rd1_5e6_v2.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd1_3_4 "SSSP time BCF ../data/graphs/big_aug_rd1_5e6_v3.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd1_4_4 "SSSP time BCF ../data/graphs/big_aug_rd1_5e6_v4.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd1_5_4 "SSSP time BCF ../data/graphs/big_aug_rd1_5e6_v5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+
+python3 exec_query.py nbvg_bcf_rd1_1_5 "SSSP time BCF ../data/graphs/big_aug_rd1_1e7.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd1_2_5 "SSSP time BCF ../data/graphs/big_aug_rd1_1e7_v2.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd1_3_5 "SSSP time BCF ../data/graphs/big_aug_rd1_1e7_v3.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd1_4_5 "SSSP time BCF ../data/graphs/big_aug_rd1_1e7_v4.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd1_5_5 "SSSP time BCF ../data/graphs/big_aug_rd1_1e7_v5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+
+python3 exec_query.py nbvg_bcf_rd1_1_6 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd1_2_6 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7_v2.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd1_3_6 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7_v3.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd1_4_6 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7_v4.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd1_5_6 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7_v5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+
+# RD2
+
+python3 exec_query.py nbvg_bcf_rd2_1_1 "SSSP time BCF ../data/graphs/big_aug_rd2_5e5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd2_2_1 "SSSP time BCF ../data/graphs/big_aug_rd2_5e5_v2.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd2_3_1 "SSSP time BCF ../data/graphs/big_aug_rd2_5e5_v3.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd2_4_1 "SSSP time BCF ../data/graphs/big_aug_rd2_5e5_v4.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd2_5_1 "SSSP time BCF ../data/graphs/big_aug_rd2_5e5_v5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+
+python3 exec_query.py nbvg_bcf_rd2_1_2 "SSSP time BCF ../data/graphs/big_aug_rd2_1e6.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd2_2_2 "SSSP time BCF ../data/graphs/big_aug_rd2_1e6_v2.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd2_3_2 "SSSP time BCF ../data/graphs/big_aug_rd2_1e6_v3.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd2_4_2 "SSSP time BCF ../data/graphs/big_aug_rd2_1e6_v4.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd2_5_2 "SSSP time BCF ../data/graphs/big_aug_rd2_1e6_v5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+
+python3 exec_query.py nbvg_bcf_rd2_1_3 "SSSP time BCF ../data/graphs/big_aug_rd2_2e6.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd2_2_3 "SSSP time BCF ../data/graphs/big_aug_rd2_2e6_v2.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd2_3_3 "SSSP time BCF ../data/graphs/big_aug_rd2_2e6_v3.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd2_4_3 "SSSP time BCF ../data/graphs/big_aug_rd2_2e6_v4.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd2_5_3 "SSSP time BCF ../data/graphs/big_aug_rd2_2e6_v5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+
+python3 exec_query.py nbvg_bcf_rd2_1_4 "SSSP time BCF ../data/graphs/big_aug_rd2_5e6.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd2_2_4 "SSSP time BCF ../data/graphs/big_aug_rd2_5e6_v2.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd2_3_4 "SSSP time BCF ../data/graphs/big_aug_rd2_5e6_v3.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd2_4_4 "SSSP time BCF ../data/graphs/big_aug_rd2_5e6_v4.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd2_5_4 "SSSP time BCF ../data/graphs/big_aug_rd2_5e6_v5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+
+python3 exec_query.py nbvg_bcf_rd2_1_5 "SSSP time BCF ../data/graphs/big_aug_rd2_1e7.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd2_2_5 "SSSP time BCF ../data/graphs/big_aug_rd2_1e7_v2.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd2_3_5 "SSSP time BCF ../data/graphs/big_aug_rd2_1e7_v3.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd2_4_5 "SSSP time BCF ../data/graphs/big_aug_rd2_1e7_v4.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd2_5_5 "SSSP time BCF ../data/graphs/big_aug_rd2_1e7_v5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+
+python3 exec_query.py nbvg_bcf_rd2_1_6 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd2_2_6 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7_v2.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd2_3_6 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7_v3.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd2_4_6 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7_v4.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rd2_5_6 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7_v5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+
+# GOR
+
+python3 exec_query.py nbvg_bcf_gor_1_1 "SSSP time BCF ../data/graphs/big_aug_gor_5e5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_gor_2_1 "SSSP time BCF ../data/graphs/big_aug_gor_5e5_v2.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_gor_3_1 "SSSP time BCF ../data/graphs/big_aug_gor_5e5_v3.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_gor_4_1 "SSSP time BCF ../data/graphs/big_aug_gor_5e5_v4.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_gor_5_1 "SSSP time BCF ../data/graphs/big_aug_gor_5e5_v5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+
+python3 exec_query.py nbvg_bcf_gor_1_2 "SSSP time BCF ../data/graphs/big_aug_gor_1e6.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_gor_2_2 "SSSP time BCF ../data/graphs/big_aug_gor_1e6_v2.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_gor_3_2 "SSSP time BCF ../data/graphs/big_aug_gor_1e6_v3.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_gor_4_2 "SSSP time BCF ../data/graphs/big_aug_gor_1e6_v4.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_gor_5_2 "SSSP time BCF ../data/graphs/big_aug_gor_1e6_v5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+
+python3 exec_query.py nbvg_bcf_gor_1_3 "SSSP time BCF ../data/graphs/big_aug_gor_2e6.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_gor_2_3 "SSSP time BCF ../data/graphs/big_aug_gor_2e6_v2.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_gor_3_3 "SSSP time BCF ../data/graphs/big_aug_gor_2e6_v3.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_gor_4_3 "SSSP time BCF ../data/graphs/big_aug_gor_2e6_v4.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_gor_5_3 "SSSP time BCF ../data/graphs/big_aug_gor_2e6_v5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+
+python3 exec_query.py nbvg_bcf_gor_1_4 "SSSP time BCF ../data/graphs/big_aug_gor_5e6.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_gor_2_4 "SSSP time BCF ../data/graphs/big_aug_gor_5e6_v2.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_gor_3_4 "SSSP time BCF ../data/graphs/big_aug_gor_5e6_v3.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_gor_4_4 "SSSP time BCF ../data/graphs/big_aug_gor_5e6_v4.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_gor_5_4 "SSSP time BCF ../data/graphs/big_aug_gor_5e6_v5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+
+python3 exec_query.py nbvg_bcf_gor_1_5 "SSSP time BCF ../data/graphs/big_aug_gor_1e7.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_gor_2_5 "SSSP time BCF ../data/graphs/big_aug_gor_1e7_v2.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_gor_3_5 "SSSP time BCF ../data/graphs/big_aug_gor_1e7_v3.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_gor_4_5 "SSSP time BCF ../data/graphs/big_aug_gor_1e7_v4.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_gor_5_5 "SSSP time BCF ../data/graphs/big_aug_gor_1e7_v5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+
+python3 exec_query.py nbvg_bcf_gor_1_6 "SSSP time BCF ../data/graphs/big_aug_gor_2e7.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_gor_2_6 "SSSP time BCF ../data/graphs/big_aug_gor_2e7_v2.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_gor_3_6 "SSSP time BCF ../data/graphs/big_aug_gor_2e7_v3.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_gor_4_6 "SSSP time BCF ../data/graphs/big_aug_gor_2e7_v4.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_gor_5_6 "SSSP time BCF ../data/graphs/big_aug_gor_2e7_v5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+
+# RAND
+
+python3 exec_query.py nbvg_bcf_rand_1_1 "SSSP time BCF ../data/graphs/big_rand_5e5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rand_2_1 "SSSP time BCF ../data/graphs/big_rand_5e5_v2.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rand_3_1 "SSSP time BCF ../data/graphs/big_rand_5e5_v3.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rand_4_1 "SSSP time BCF ../data/graphs/big_rand_5e5_v4.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rand_5_1 "SSSP time BCF ../data/graphs/big_rand_5e5_v5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+
+python3 exec_query.py nbvg_bcf_rand_1_2 "SSSP time BCF ../data/graphs/big_rand_1e6.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rand_2_2 "SSSP time BCF ../data/graphs/big_rand_1e6_v2.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rand_3_2 "SSSP time BCF ../data/graphs/big_rand_1e6_v3.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rand_4_2 "SSSP time BCF ../data/graphs/big_rand_1e6_v4.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rand_5_2 "SSSP time BCF ../data/graphs/big_rand_1e6_v5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+
+python3 exec_query.py nbvg_bcf_rand_1_3 "SSSP time BCF ../data/graphs/big_rand_2e6.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rand_2_3 "SSSP time BCF ../data/graphs/big_rand_2e6_v2.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rand_3_3 "SSSP time BCF ../data/graphs/big_rand_2e6_v3.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rand_4_3 "SSSP time BCF ../data/graphs/big_rand_2e6_v4.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rand_5_3 "SSSP time BCF ../data/graphs/big_rand_2e6_v5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+
+python3 exec_query.py nbvg_bcf_rand_1_4 "SSSP time BCF ../data/graphs/big_rand_5e6.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rand_2_4 "SSSP time BCF ../data/graphs/big_rand_5e6_v2.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rand_3_4 "SSSP time BCF ../data/graphs/big_rand_5e6_v3.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rand_4_4 "SSSP time BCF ../data/graphs/big_rand_5e6_v4.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rand_5_4 "SSSP time BCF ../data/graphs/big_rand_5e6_v5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+
+python3 exec_query.py nbvg_bcf_rand_1_5 "SSSP time BCF ../data/graphs/big_rand_1e7.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rand_2_5 "SSSP time BCF ../data/graphs/big_rand_1e7_v2.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rand_3_5 "SSSP time BCF ../data/graphs/big_rand_1e7_v3.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rand_4_5 "SSSP time BCF ../data/graphs/big_rand_1e7_v4.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rand_5_5 "SSSP time BCF ../data/graphs/big_rand_1e7_v5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+
+python3 exec_query.py nbvg_bcf_rand_1_6 "SSSP time BCF ../data/graphs/big_rand_2e7.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rand_2_6 "SSSP time BCF ../data/graphs/big_rand_2e7_v2.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rand_3_6 "SSSP time BCF ../data/graphs/big_rand_2e7_v3.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rand_4_6 "SSSP time BCF ../data/graphs/big_rand_2e7_v4.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py nbvg_bcf_rand_5_6 "SSSP time BCF ../data/graphs/big_rand_2e7_v5.txt 0 1" diam_apprx=1 k_factor=40 cutedges=5

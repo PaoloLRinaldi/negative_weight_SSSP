@@ -1,0 +1,16 @@
+# launch with:
+# cat ../data/queries/usa_bcf_vs_gor_queries.txt | parallel -j 4 {}
+
+# GOR
+
+python3 exec_query.py usa_gor_0 "SSSP time GOR ../data/graphs/USA-road-d.USA.txt 0 5"
+python3 exec_query.py usa_gor_1 "SSSP time GOR ../data/graphs/USA-road-d.USA_1.txt 0 5"
+python3 exec_query.py usa_gor_10 "SSSP time GOR ../data/graphs/USA-road-d.USA_10.txt 0 5"
+python3 exec_query.py usa_gor_100 "SSSP time GOR ../data/graphs/USA-road-d.USA_100.txt 0 5"
+
+# BCF
+
+python3 exec_query.py usa_bcf_0 "SSSP time BCF ../data/graphs/USA-road-d.USA.txt 0 5" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py usa_bcf_1 "SSSP time BCF ../data/graphs/USA-road-d.USA_1.txt 0 5" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py usa_bcf_10 "SSSP time BCF ../data/graphs/USA-road-d.USA_10.txt 0 5" diam_apprx=1 k_factor=40 cutedges=5
+python3 exec_query.py usa_bcf_100 "SSSP time BCF ../data/graphs/USA-road-d.USA_100.txt 0 5" diam_apprx=1 k_factor=40 cutedges=5

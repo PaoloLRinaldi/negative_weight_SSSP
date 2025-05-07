@@ -1,0 +1,4 @@
+timestamp,alg_goal,exp_type,alg_name,filename,source,reps,use_lazy,init_kappa,k_factor,rand_label,fixdagedges,cutedges,rec_limit,cutedgesseed,diam_apprx,ol_seed,il_seed,eg_sort_scc,avg_time,std,min,max,n,m,exp_name
+2024-07-02 15:17:22,SSSP,time,GOR,../data/graphs/big_aug_rd2_5e5.txt,0,5,1,0,1,0,1,1,100,1234,0,1234,12134,0,157.82,13.238,148.27,182.99,49999,499968,nbvg_rd2_1
+2024-07-07 06:47:37,SSSP,time,GOR,../data/graphs/big_aug_rd2_5e5.txt,0,5,1,0,1,0,1,1,100,1234,0,1234,12134,0,173.27,26.131999999999998,126.52,207.56,49999,499968,nbvg_rd2_1
+2024-07-09 13:48:28,SSSP,time,GOR,../data/graphs/big_aug_rd2_5e5.txt,0,5,1,0,1,0,1,1,100,1234,0,1234,12134,0,179.02,8.5828,166.66,191.63,49999,499968,nbvg_rd2_1

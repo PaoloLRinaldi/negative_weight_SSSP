@@ -1,0 +1,37 @@
+# launch with:
+# cat create_shift_from_aug.txt | parallel -j 4 {}
+
+../build/Main cutedgesseed=111 shift_filename=../data/graphs/shiftv1_aug_gor_5e5.txt use_lazy=0 "SSSP time BCF ../data/graphs/big_aug_gor_5e5.txt 0 1"
+../build/Main cutedgesseed=111 shift_filename=../data/graphs/shiftv1_aug_gor_1e6.txt use_lazy=0 "SSSP time BCF ../data/graphs/big_aug_gor_1e6.txt 0 1"
+../build/Main cutedgesseed=111 shift_filename=../data/graphs/shiftv1_aug_gor_2e6.txt use_lazy=0 "SSSP time BCF ../data/graphs/big_aug_gor_2e6.txt 0 1"
+../build/Main cutedgesseed=111 shift_filename=../data/graphs/shiftv1_aug_gor_5e6.txt use_lazy=0 "SSSP time BCF ../data/graphs/big_aug_gor_5e6.txt 0 1"
+../build/Main cutedgesseed=111 shift_filename=../data/graphs/shiftv1_aug_gor_1e7.txt use_lazy=0 "SSSP time BCF ../data/graphs/big_aug_gor_1e7.txt 0 1"
+../build/Main cutedgesseed=111 shift_filename=../data/graphs/shiftv1_aug_gor_2e7.txt use_lazy=0 "SSSP time BCF ../data/graphs/big_aug_gor_2e7.txt 0 1"
+
+../build/Main cutedgesseed=222 shift_filename=../data/graphs/shiftv2_aug_gor_5e5.txt use_lazy=0 "SSSP time BCF ../data/graphs/big_aug_gor_5e5_v2.txt 0 1"
+../build/Main cutedgesseed=222 shift_filename=../data/graphs/shiftv2_aug_gor_1e6.txt use_lazy=0 "SSSP time BCF ../data/graphs/big_aug_gor_1e6_v2.txt 0 1"
+../build/Main cutedgesseed=222 shift_filename=../data/graphs/shiftv2_aug_gor_2e6.txt use_lazy=0 "SSSP time BCF ../data/graphs/big_aug_gor_2e6_v2.txt 0 1"
+../build/Main cutedgesseed=222 shift_filename=../data/graphs/shiftv2_aug_gor_5e6.txt use_lazy=0 "SSSP time BCF ../data/graphs/big_aug_gor_5e6_v2.txt 0 1"
+../build/Main cutedgesseed=222 shift_filename=../data/graphs/shiftv2_aug_gor_1e7.txt use_lazy=0 "SSSP time BCF ../data/graphs/big_aug_gor_1e7_v2.txt 0 1"
+../build/Main cutedgesseed=222 shift_filename=../data/graphs/shiftv2_aug_gor_2e7.txt use_lazy=0 "SSSP time BCF ../data/graphs/big_aug_gor_2e7_v2.txt 0 1"
+
+../build/Main cutedgesseed=333 shift_filename=../data/graphs/shiftv3_aug_gor_5e5.txt use_lazy=0 "SSSP time BCF ../data/graphs/big_aug_gor_5e5_v3.txt 0 1"
+../build/Main cutedgesseed=333 shift_filename=../data/graphs/shiftv3_aug_gor_1e6.txt use_lazy=0 "SSSP time BCF ../data/graphs/big_aug_gor_1e6_v3.txt 0 1"
+../build/Main cutedgesseed=333 shift_filename=../data/graphs/shiftv3_aug_gor_2e6.txt use_lazy=0 "SSSP time BCF ../data/graphs/big_aug_gor_2e6_v3.txt 0 1"
+../build/Main cutedgesseed=333 shift_filename=../data/graphs/shiftv3_aug_gor_5e6.txt use_lazy=0 "SSSP time BCF ../data/graphs/big_aug_gor_5e6_v3.txt 0 1"
+../build/Main cutedgesseed=333 shift_filename=../data/graphs/shiftv3_aug_gor_1e7.txt use_lazy=0 "SSSP time BCF ../data/graphs/big_aug_gor_1e7_v3.txt 0 1"
+../build/Main cutedgesseed=333 shift_filename=../data/graphs/shiftv3_aug_gor_2e7.txt use_lazy=0 "SSSP time BCF ../data/graphs/big_aug_gor_2e7_v3.txt 0 1"
+
+../build/Main cutedgesseed=444 shift_filename=../data/graphs/shiftv4_aug_gor_5e5.txt use_lazy=0 "SSSP time BCF ../data/graphs/big_aug_gor_5e5_v4.txt 0 1"
+../build/Main cutedgesseed=444 shift_filename=../data/graphs/shiftv4_aug_gor_1e6.txt use_lazy=0 "SSSP time BCF ../data/graphs/big_aug_gor_1e6_v4.txt 0 1"
+../build/Main cutedgesseed=444 shift_filename=../data/graphs/shiftv4_aug_gor_2e6.txt use_lazy=0 "SSSP time BCF ../data/graphs/big_aug_gor_2e6_v4.txt 0 1"
+../build/Main cutedgesseed=444 shift_filename=../data/graphs/shiftv4_aug_gor_5e6.txt use_lazy=0 "SSSP time BCF ../data/graphs/big_aug_gor_5e6_v4.txt 0 1"
+../build/Main cutedgesseed=444 shift_filename=../data/graphs/shiftv4_aug_gor_1e7.txt use_lazy=0 "SSSP time BCF ../data/graphs/big_aug_gor_1e7_v4.txt 0 1"
+../build/Main cutedgesseed=444 shift_filename=../data/graphs/shiftv4_aug_gor_2e7.txt use_lazy=0 "SSSP time BCF ../data/graphs/big_aug_gor_2e7_v4.txt 0 1"
+
+../build/Main cutedgesseed=555 shift_filename=../data/graphs/shiftv5_aug_gor_5e5.txt use_lazy=0 "SSSP time BCF ../data/graphs/big_aug_gor_5e5_v5.txt 0 1"
+../build/Main cutedgesseed=555 shift_filename=../data/graphs/shiftv5_aug_gor_1e6.txt use_lazy=0 "SSSP time BCF ../data/graphs/big_aug_gor_1e6_v5.txt 0 1"
+../build/Main cutedgesseed=555 shift_filename=../data/graphs/shiftv5_aug_gor_2e6.txt use_lazy=0 "SSSP time BCF ../data/graphs/big_aug_gor_2e6_v5.txt 0 1"
+../build/Main cutedgesseed=555 shift_filename=../data/graphs/shiftv5_aug_gor_5e6.txt use_lazy=0 "SSSP time BCF ../data/graphs/big_aug_gor_5e6_v5.txt 0 1"
+../build/Main cutedgesseed=555 shift_filename=../data/graphs/shiftv5_aug_gor_1e7.txt use_lazy=0 "SSSP time BCF ../data/graphs/big_aug_gor_1e7_v5.txt 0 1"
+../build/Main cutedgesseed=555 shift_filename=../data/graphs/shiftv5_aug_gor_2e7.txt use_lazy=0 "SSSP time BCF ../data/graphs/big_aug_gor_2e7_v5.txt 0 1"

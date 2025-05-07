@@ -1,0 +1,3 @@
+timestamp,alg_goal,exp_type,alg_name,filename,source,reps,use_lazy,init_kappa,k_factor,rand_label,fixdagedges,cutedges,rec_limit,cutedgesseed,diam_apprx,ol_seed,il_seed,eg_sort_scc,avg_time,std,min,max,n,m,exp_name
+2024-06-18 17:29:20,SSSP,time,BCF,../data/graphs/big_aug_bfct_1e7.txt,0,1,1,1,1,0,1,1,100,1234,0,1234,12134,0,351800,0,351800,351800,1333331,9999972,param_ik_1
+2024-06-19 16:43:04,SSSP,time,BCF,../data/graphs/big_aug_bfct_1e7.txt,0,1,1,1,1,0,1,1,100,1234,0,1234,12134,0,212410,0,212410,212410,1333331,9999972,param_ik_1

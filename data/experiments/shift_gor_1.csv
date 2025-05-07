@@ -1,0 +1,13 @@
+timestamp,alg_goal,exp_type,alg_name,filename,source,reps,use_lazy,init_kappa,k_factor,rand_label,fixdagedges,cutedges,rec_limit,cutedgesseed,diam_apprx,ol_seed,il_seed,eg_sort_scc,avg_time,std,min,max,n,m,exp_name
+2024-06-16 16:39:12,SSSP,time,BCF,../data/graphs/shift_aug_gor_5e5.txt,0,1,1,0,1,0,1,1,100,1234,0,1234,12134,0,13119.0,0,13119.0,13119.0,55541,555387,shift_gor_1
+2024-06-16 16:39:25,SSSP,time,BCF,../data/graphs/shift_aug_gor_1e6.txt,0,1,1,0,1,0,1,1,100,1234,0,1234,12134,0,3299.3,0,3299.3,3299.3,111085,1110855,shift_gor_1
+2024-06-16 16:41:30,SSSP,time,BCF,../data/graphs/shift_aug_gor_5e5.txt,0,1,1,0,1,0,1,1,100,1234,0,1234,12134,0,13467.0,0,13467.0,13467.0,55541,555387,shift_gor_1
+2024-06-16 16:41:44,SSSP,time,BCF,../data/graphs/shift_aug_gor_1e6.txt,0,1,1,0,1,0,1,1,100,1234,0,1234,12134,0,2824.5,0,2824.5,2824.5,111085,1110855,shift_gor_1
+2024-06-16 16:44:15,SSSP,time,BCF,../data/graphs/shift_aug_gor_5e5.txt,0,1,1,0,1,0,1,1,100,1234,0,1234,12134,0,15333.0,0,15333.0,15333.0,55541,555387,shift_gor_1
+2024-06-16 16:44:31,SSSP,time,BCF,../data/graphs/shift_aug_gor_1e6.txt,0,1,1,0,1,0,1,1,100,1234,0,1234,12134,0,3348.9,0,3348.9,3348.9,111085,1110855,shift_gor_1
+2024-06-16 20:06:07,SSSP,time,BCF,../data/graphs/shift_aug_gor_5e5.txt,0,1,1,0,1,0,1,1,100,1234,0,1234,12134,0,18396.0,0,18396.0,18396.0,55541,555387,shift_gor_1
+2024-06-16 20:06:26,SSSP,time,BCF,../data/graphs/shift_aug_gor_1e6.txt,0,1,1,0,1,0,1,1,100,1234,0,1234,12134,0,3696.0,0,3696.0,3696.0,111085,1110855,shift_gor_1
+2024-06-16 20:49:47,SSSP,time,GOR,../data/graphs/shift_aug_gor_5e5.txt,0,1,1,0,1,0,1,1,100,1234,0,1234,12134,0,45175.0,0,45175.0,45175.0,55541,555387,shift_gor_1
+2024-06-16 20:50:32,SSSP,time,GOR,../data/graphs/shift_aug_gor_1e6.txt,0,1,1,0,1,0,1,1,100,1234,0,1234,12134,0,570410.0,0,570410.0,570410.0,111085,1110855,shift_gor_1
+2024-06-18 16:48:27,SSSP,time,GOR,../data/graphs/shift_aug_gor_1e6.txt,0,7,1,0,1,0,1,1,100,1234,0,1234,12134,0,573670.0,23683,542260.0,611130.0,111085,1110855,shift_gor_1
+2024-06-20 16:46:07,SSSP,time,GOR,../data/graphs/shift_aug_gor_1e6.txt,0,1,1,0,1,0,1,1,100,1234,0,1234,12134,0,506340,0,506340,506340,111085,1110855,shift_gor_1

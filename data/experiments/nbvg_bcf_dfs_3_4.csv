@@ -1,0 +1,6 @@
+timestamp,alg_goal,exp_type,alg_name,filename,source,reps,use_lazy,init_kappa,k_factor,rand_label,fixdagedges,cutedges,rec_limit,cutedgesseed,diam_apprx,ol_seed,il_seed,eg_sort_scc,avg_time,std,min,max,n,m,exp_name
+2024-07-09 16:43:33,SSSP,time,BCF,../data/graphs/big_aug_dfs_5e6_v3.txt,0,1,1,0,1,0,1,1,100,1234,0,1234,12134,0,37468,0,37468,37468,416666,4999974,nbvg_bcf_dfs_3_4
+2024-07-10 15:56:24,SSSP,time,BCF,../data/graphs/big_aug_dfs_5e6_v3.txt,0,1,1,0,40,0,1,5,100,1234,1,1234,12134,0,15567,0,15567,15567,416666,4999974,nbvg_bcf_dfs_3_4
+2024-07-12 15:41:47,SSSP,time,BCF,../data/graphs/big_aug_dfs_5e6_v3.txt,0,1,1,0,40,0,1,5,100,1234,1,1234,12134,0,11677,0,11677,11677,416666,4999974,nbvg_bcf_dfs_3_4
+2024-07-15 20:17:16,SSSP,time,BCF,../data/graphs/big_aug_dfs_5e6_v3.txt,0,1,1,0,40,0,1,5,100,9876,1,1234,12134,0,10439,0,10439,10439,416666,4999974,nbvg_bcf_dfs_3_4
+2024-07-15 21:18:10,SSSP,time,BCF,../data/graphs/big_aug_dfs_5e6_v3.txt,0,1,1,0,40,0,1,5,100,9876,1,1234,12134,0,7721.9,0,7721.9,7721.9,416666,4999974,nbvg_bcf_dfs_3_4

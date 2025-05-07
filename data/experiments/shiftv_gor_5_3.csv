@@ -1,0 +1,2 @@
+timestamp,alg_goal,exp_type,alg_name,filename,source,reps,use_lazy,init_kappa,k_factor,rand_label,fixdagedges,cutedges,rec_limit,cutedgesseed,diam_apprx,ol_seed,il_seed,eg_sort_scc,avg_time,std,min,max,n,m,exp_name
+2024-06-27 03:31:58,SSSP,time,GOR,../data/graphs/shiftv5_aug_gor_2e6.txt,0,1,1,0,1,0,1,1,100,1234,0,1234,12134,0,3.3842e+06,0,3.3842e+06,3.3842e+06,222166,2221676,shiftv_gor_5_3

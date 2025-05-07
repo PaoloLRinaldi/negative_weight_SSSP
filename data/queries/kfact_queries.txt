@@ -1,0 +1,405 @@
+# launch with:
+# cat ../data/queries/kfact_queries.txt | parallel -j 4 {}
+
+# k_factor=1
+
+# python3 exec_query.py kfact_bfct_1_1 "SSSP time BCF ../data/graphs/big_aug_bfct_5e5.txt 0 1" cutedges=5 k_factor=1
+# python3 exec_query.py kfact_bfct_1_2 "SSSP time BCF ../data/graphs/big_aug_bfct_1e6.txt 0 1" cutedges=5 k_factor=1
+# python3 exec_query.py kfact_bfct_1_3 "SSSP time BCF ../data/graphs/big_aug_bfct_2e6.txt 0 1" cutedges=5 k_factor=1
+# python3 exec_query.py kfact_bfct_1_4 "SSSP time BCF ../data/graphs/big_aug_bfct_5e6.txt 0 1" cutedges=5 k_factor=1
+# python3 exec_query.py kfact_bfct_1_5 "SSSP time BCF ../data/graphs/big_aug_bfct_1e7.txt 0 1" cutedges=5 k_factor=1
+# python3 exec_query.py kfact_bfct_1_6 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7.txt 0 1" cutedges=5 k_factor=1
+# 
+# python3 exec_query.py kfact_dfs_1_1 "SSSP time BCF ../data/graphs/big_aug_dfs_5e5.txt 0 1" cutedges=5 k_factor=1
+# python3 exec_query.py kfact_dfs_1_2 "SSSP time BCF ../data/graphs/big_aug_dfs_1e6.txt 0 1" cutedges=5 k_factor=1
+# python3 exec_query.py kfact_dfs_1_3 "SSSP time BCF ../data/graphs/big_aug_dfs_2e6.txt 0 1" cutedges=5 k_factor=1
+# python3 exec_query.py kfact_dfs_1_4 "SSSP time BCF ../data/graphs/big_aug_dfs_5e6.txt 0 1" cutedges=5 k_factor=1
+# python3 exec_query.py kfact_dfs_1_5 "SSSP time BCF ../data/graphs/big_aug_dfs_1e7.txt 0 1" cutedges=5 k_factor=1
+# python3 exec_query.py kfact_dfs_1_6 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7.txt 0 1" cutedges=5 k_factor=1
+# 
+# python3 exec_query.py kfact_rd1_1_1 "SSSP time BCF ../data/graphs/big_aug_rd1_5e5.txt 0 1" cutedges=5 k_factor=1
+# python3 exec_query.py kfact_rd1_1_2 "SSSP time BCF ../data/graphs/big_aug_rd1_1e6.txt 0 1" cutedges=5 k_factor=1
+# python3 exec_query.py kfact_rd1_1_3 "SSSP time BCF ../data/graphs/big_aug_rd1_2e6.txt 0 1" cutedges=5 k_factor=1
+# python3 exec_query.py kfact_rd1_1_4 "SSSP time BCF ../data/graphs/big_aug_rd1_5e6.txt 0 1" cutedges=5 k_factor=1
+# python3 exec_query.py kfact_rd1_1_5 "SSSP time BCF ../data/graphs/big_aug_rd1_1e7.txt 0 1" cutedges=5 k_factor=1
+# python3 exec_query.py kfact_rd1_1_6 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7.txt 0 1" cutedges=5 k_factor=1
+# 
+# python3 exec_query.py kfact_rd2_1_1 "SSSP time BCF ../data/graphs/big_aug_rd2_5e5.txt 0 1" cutedges=5 k_factor=1
+# python3 exec_query.py kfact_rd2_1_2 "SSSP time BCF ../data/graphs/big_aug_rd2_1e6.txt 0 1" cutedges=5 k_factor=1
+# python3 exec_query.py kfact_rd2_1_3 "SSSP time BCF ../data/graphs/big_aug_rd2_2e6.txt 0 1" cutedges=5 k_factor=1
+# python3 exec_query.py kfact_rd2_1_4 "SSSP time BCF ../data/graphs/big_aug_rd2_5e6.txt 0 1" cutedges=5 k_factor=1
+# python3 exec_query.py kfact_rd2_1_5 "SSSP time BCF ../data/graphs/big_aug_rd2_1e7.txt 0 1" cutedges=5 k_factor=1
+# python3 exec_query.py kfact_rd2_1_6 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7.txt 0 1" cutedges=5 k_factor=1
+# 
+# python3 exec_query.py kfact_gor_1_1 "SSSP time BCF ../data/graphs/big_aug_gor_5e5.txt 0 1" cutedges=5 k_factor=1
+# python3 exec_query.py kfact_gor_1_2 "SSSP time BCF ../data/graphs/big_aug_gor_1e6.txt 0 1" cutedges=5 k_factor=1
+# python3 exec_query.py kfact_gor_1_3 "SSSP time BCF ../data/graphs/big_aug_gor_2e6.txt 0 1" cutedges=5 k_factor=1
+# python3 exec_query.py kfact_gor_1_4 "SSSP time BCF ../data/graphs/big_aug_gor_5e6.txt 0 1" cutedges=5 k_factor=1
+# python3 exec_query.py kfact_gor_1_5 "SSSP time BCF ../data/graphs/big_aug_gor_1e7.txt 0 1" cutedges=5 k_factor=1
+# python3 exec_query.py kfact_gor_1_6 "SSSP time BCF ../data/graphs/big_aug_gor_2e7.txt 0 1" cutedges=5 k_factor=1
+
+python3 exec_query.py kfact2e7_bfct_1_1 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7.txt 0 1" cutedges=5 k_factor=1
+python3 exec_query.py kfact2e7_bfct_1_2 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7_v2.txt 0 1" cutedges=5 k_factor=1
+python3 exec_query.py kfact2e7_bfct_1_3 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7_v3.txt 0 1" cutedges=5 k_factor=1
+python3 exec_query.py kfact2e7_bfct_1_4 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7_v4.txt 0 1" cutedges=5 k_factor=1
+python3 exec_query.py kfact2e7_bfct_1_5 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7_v5.txt 0 1" cutedges=5 k_factor=1
+
+python3 exec_query.py kfact2e7_dfs_1_1 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7.txt 0 1" cutedges=5 k_factor=1
+python3 exec_query.py kfact2e7_dfs_1_2 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7_v2.txt 0 1" cutedges=5 k_factor=1
+python3 exec_query.py kfact2e7_dfs_1_3 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7_v3.txt 0 1" cutedges=5 k_factor=1
+python3 exec_query.py kfact2e7_dfs_1_4 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7_v4.txt 0 1" cutedges=5 k_factor=1
+python3 exec_query.py kfact2e7_dfs_1_5 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7_v5.txt 0 1" cutedges=5 k_factor=1
+
+python3 exec_query.py kfact2e7_rd1_1_1 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7.txt 0 1" cutedges=5 k_factor=1
+python3 exec_query.py kfact2e7_rd1_1_2 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7_v2.txt 0 1" cutedges=5 k_factor=1
+python3 exec_query.py kfact2e7_rd1_1_3 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7_v3.txt 0 1" cutedges=5 k_factor=1
+python3 exec_query.py kfact2e7_rd1_1_4 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7_v4.txt 0 1" cutedges=5 k_factor=1
+python3 exec_query.py kfact2e7_rd1_1_5 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7_v5.txt 0 1" cutedges=5 k_factor=1
+
+python3 exec_query.py kfact2e7_rd2_1_1 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7.txt 0 1" cutedges=5 k_factor=1
+python3 exec_query.py kfact2e7_rd2_1_2 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7_v2.txt 0 1" cutedges=5 k_factor=1
+python3 exec_query.py kfact2e7_rd2_1_3 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7_v3.txt 0 1" cutedges=5 k_factor=1
+python3 exec_query.py kfact2e7_rd2_1_4 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7_v4.txt 0 1" cutedges=5 k_factor=1
+python3 exec_query.py kfact2e7_rd2_1_5 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7_v5.txt 0 1" cutedges=5 k_factor=1
+
+python3 exec_query.py kfact2e7_gor_1_1 "SSSP time BCF ../data/graphs/big_aug_gor_2e7.txt 0 1" cutedges=5 k_factor=1
+python3 exec_query.py kfact2e7_gor_1_2 "SSSP time BCF ../data/graphs/big_aug_gor_2e7_v2.txt 0 1" cutedges=5 k_factor=1
+python3 exec_query.py kfact2e7_gor_1_3 "SSSP time BCF ../data/graphs/big_aug_gor_2e7_v3.txt 0 1" cutedges=5 k_factor=1
+python3 exec_query.py kfact2e7_gor_1_4 "SSSP time BCF ../data/graphs/big_aug_gor_2e7_v4.txt 0 1" cutedges=5 k_factor=1
+python3 exec_query.py kfact2e7_gor_1_5 "SSSP time BCF ../data/graphs/big_aug_gor_2e7_v5.txt 0 1" cutedges=5 k_factor=1
+
+# k_factor=5
+
+# python3 exec_query.py kfact_bfct_5_1 "SSSP time BCF ../data/graphs/big_aug_bfct_5e5.txt 0 1" cutedges=5 k_factor=5
+# python3 exec_query.py kfact_bfct_5_2 "SSSP time BCF ../data/graphs/big_aug_bfct_1e6.txt 0 1" cutedges=5 k_factor=5
+# python3 exec_query.py kfact_bfct_5_3 "SSSP time BCF ../data/graphs/big_aug_bfct_2e6.txt 0 1" cutedges=5 k_factor=5
+# python3 exec_query.py kfact_bfct_5_4 "SSSP time BCF ../data/graphs/big_aug_bfct_5e6.txt 0 1" cutedges=5 k_factor=5
+# python3 exec_query.py kfact_bfct_5_5 "SSSP time BCF ../data/graphs/big_aug_bfct_1e7.txt 0 1" cutedges=5 k_factor=5
+# python3 exec_query.py kfact_bfct_5_6 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7.txt 0 1" cutedges=5 k_factor=5
+# 
+# python3 exec_query.py kfact_dfs_5_1 "SSSP time BCF ../data/graphs/big_aug_dfs_5e5.txt 0 1" cutedges=5 k_factor=5
+# python3 exec_query.py kfact_dfs_5_2 "SSSP time BCF ../data/graphs/big_aug_dfs_1e6.txt 0 1" cutedges=5 k_factor=5
+# python3 exec_query.py kfact_dfs_5_3 "SSSP time BCF ../data/graphs/big_aug_dfs_2e6.txt 0 1" cutedges=5 k_factor=5
+# python3 exec_query.py kfact_dfs_5_4 "SSSP time BCF ../data/graphs/big_aug_dfs_5e6.txt 0 1" cutedges=5 k_factor=5
+# python3 exec_query.py kfact_dfs_5_5 "SSSP time BCF ../data/graphs/big_aug_dfs_1e7.txt 0 1" cutedges=5 k_factor=5
+# python3 exec_query.py kfact_dfs_5_6 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7.txt 0 1" cutedges=5 k_factor=5
+# 
+# python3 exec_query.py kfact_rd1_5_1 "SSSP time BCF ../data/graphs/big_aug_rd1_5e5.txt 0 1" cutedges=5 k_factor=5
+# python3 exec_query.py kfact_rd1_5_2 "SSSP time BCF ../data/graphs/big_aug_rd1_1e6.txt 0 1" cutedges=5 k_factor=5
+# python3 exec_query.py kfact_rd1_5_3 "SSSP time BCF ../data/graphs/big_aug_rd1_2e6.txt 0 1" cutedges=5 k_factor=5
+# python3 exec_query.py kfact_rd1_5_4 "SSSP time BCF ../data/graphs/big_aug_rd1_5e6.txt 0 1" cutedges=5 k_factor=5
+# python3 exec_query.py kfact_rd1_5_5 "SSSP time BCF ../data/graphs/big_aug_rd1_1e7.txt 0 1" cutedges=5 k_factor=5
+# python3 exec_query.py kfact_rd1_5_6 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7.txt 0 1" cutedges=5 k_factor=5
+# 
+# python3 exec_query.py kfact_rd2_5_1 "SSSP time BCF ../data/graphs/big_aug_rd2_5e5.txt 0 1" cutedges=5 k_factor=5
+# python3 exec_query.py kfact_rd2_5_2 "SSSP time BCF ../data/graphs/big_aug_rd2_1e6.txt 0 1" cutedges=5 k_factor=5
+# python3 exec_query.py kfact_rd2_5_3 "SSSP time BCF ../data/graphs/big_aug_rd2_2e6.txt 0 1" cutedges=5 k_factor=5
+# python3 exec_query.py kfact_rd2_5_4 "SSSP time BCF ../data/graphs/big_aug_rd2_5e6.txt 0 1" cutedges=5 k_factor=5
+# python3 exec_query.py kfact_rd2_5_5 "SSSP time BCF ../data/graphs/big_aug_rd2_1e7.txt 0 1" cutedges=5 k_factor=5
+# python3 exec_query.py kfact_rd2_5_6 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7.txt 0 1" cutedges=5 k_factor=5
+# 
+# python3 exec_query.py kfact_gor_5_1 "SSSP time BCF ../data/graphs/big_aug_gor_5e5.txt 0 1" cutedges=5 k_factor=5
+# python3 exec_query.py kfact_gor_5_2 "SSSP time BCF ../data/graphs/big_aug_gor_1e6.txt 0 1" cutedges=5 k_factor=5
+# python3 exec_query.py kfact_gor_5_3 "SSSP time BCF ../data/graphs/big_aug_gor_2e6.txt 0 1" cutedges=5 k_factor=5
+# python3 exec_query.py kfact_gor_5_4 "SSSP time BCF ../data/graphs/big_aug_gor_5e6.txt 0 1" cutedges=5 k_factor=5
+# python3 exec_query.py kfact_gor_5_5 "SSSP time BCF ../data/graphs/big_aug_gor_1e7.txt 0 1" cutedges=5 k_factor=5
+# python3 exec_query.py kfact_gor_5_6 "SSSP time BCF ../data/graphs/big_aug_gor_2e7.txt 0 1" cutedges=5 k_factor=5
+
+python3 exec_query.py kfact2e7_bfct_5_1 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7.txt 0 1" cutedges=5 k_factor=5
+python3 exec_query.py kfact2e7_bfct_5_2 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7_v2.txt 0 1" cutedges=5 k_factor=5
+python3 exec_query.py kfact2e7_bfct_5_3 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7_v3.txt 0 1" cutedges=5 k_factor=5
+python3 exec_query.py kfact2e7_bfct_5_4 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7_v4.txt 0 1" cutedges=5 k_factor=5
+python3 exec_query.py kfact2e7_bfct_5_5 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7_v5.txt 0 1" cutedges=5 k_factor=5
+
+python3 exec_query.py kfact2e7_dfs_5_1 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7.txt 0 1" cutedges=5 k_factor=5
+python3 exec_query.py kfact2e7_dfs_5_2 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7_v2.txt 0 1" cutedges=5 k_factor=5
+python3 exec_query.py kfact2e7_dfs_5_3 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7_v3.txt 0 1" cutedges=5 k_factor=5
+python3 exec_query.py kfact2e7_dfs_5_4 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7_v4.txt 0 1" cutedges=5 k_factor=5
+python3 exec_query.py kfact2e7_dfs_5_5 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7_v5.txt 0 1" cutedges=5 k_factor=5
+
+python3 exec_query.py kfact2e7_rd1_5_1 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7.txt 0 1" cutedges=5 k_factor=5
+python3 exec_query.py kfact2e7_rd1_5_2 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7_v2.txt 0 1" cutedges=5 k_factor=5
+python3 exec_query.py kfact2e7_rd1_5_3 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7_v3.txt 0 1" cutedges=5 k_factor=5
+python3 exec_query.py kfact2e7_rd1_5_4 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7_v4.txt 0 1" cutedges=5 k_factor=5
+python3 exec_query.py kfact2e7_rd1_5_5 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7_v5.txt 0 1" cutedges=5 k_factor=5
+
+python3 exec_query.py kfact2e7_rd2_5_1 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7.txt 0 1" cutedges=5 k_factor=5
+python3 exec_query.py kfact2e7_rd2_5_2 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7_v2.txt 0 1" cutedges=5 k_factor=5
+python3 exec_query.py kfact2e7_rd2_5_3 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7_v3.txt 0 1" cutedges=5 k_factor=5
+python3 exec_query.py kfact2e7_rd2_5_4 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7_v4.txt 0 1" cutedges=5 k_factor=5
+python3 exec_query.py kfact2e7_rd2_5_5 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7_v5.txt 0 1" cutedges=5 k_factor=5
+
+python3 exec_query.py kfact2e7_gor_5_1 "SSSP time BCF ../data/graphs/big_aug_gor_2e7.txt 0 1" cutedges=5 k_factor=5
+python3 exec_query.py kfact2e7_gor_5_2 "SSSP time BCF ../data/graphs/big_aug_gor_2e7_v2.txt 0 1" cutedges=5 k_factor=5
+python3 exec_query.py kfact2e7_gor_5_3 "SSSP time BCF ../data/graphs/big_aug_gor_2e7_v3.txt 0 1" cutedges=5 k_factor=5
+python3 exec_query.py kfact2e7_gor_5_4 "SSSP time BCF ../data/graphs/big_aug_gor_2e7_v4.txt 0 1" cutedges=5 k_factor=5
+python3 exec_query.py kfact2e7_gor_5_5 "SSSP time BCF ../data/graphs/big_aug_gor_2e7_v5.txt 0 1" cutedges=5 k_factor=5
+
+# k_factor=10
+
+# python3 exec_query.py kfact_bfct_10_1 "SSSP time BCF ../data/graphs/big_aug_bfct_5e5.txt 0 1" cutedges=5 k_factor=10
+# python3 exec_query.py kfact_bfct_10_2 "SSSP time BCF ../data/graphs/big_aug_bfct_1e6.txt 0 1" cutedges=5 k_factor=10
+# python3 exec_query.py kfact_bfct_10_3 "SSSP time BCF ../data/graphs/big_aug_bfct_2e6.txt 0 1" cutedges=5 k_factor=10
+# python3 exec_query.py kfact_bfct_10_4 "SSSP time BCF ../data/graphs/big_aug_bfct_5e6.txt 0 1" cutedges=5 k_factor=10
+# python3 exec_query.py kfact_bfct_10_5 "SSSP time BCF ../data/graphs/big_aug_bfct_1e7.txt 0 1" cutedges=5 k_factor=10
+# python3 exec_query.py kfact_bfct_10_6 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7.txt 0 1" cutedges=5 k_factor=10
+# 
+# python3 exec_query.py kfact_dfs_10_1 "SSSP time BCF ../data/graphs/big_aug_dfs_5e5.txt 0 1" cutedges=5 k_factor=10
+# python3 exec_query.py kfact_dfs_10_2 "SSSP time BCF ../data/graphs/big_aug_dfs_1e6.txt 0 1" cutedges=5 k_factor=10
+# python3 exec_query.py kfact_dfs_10_3 "SSSP time BCF ../data/graphs/big_aug_dfs_2e6.txt 0 1" cutedges=5 k_factor=10
+# python3 exec_query.py kfact_dfs_10_4 "SSSP time BCF ../data/graphs/big_aug_dfs_5e6.txt 0 1" cutedges=5 k_factor=10
+# python3 exec_query.py kfact_dfs_10_5 "SSSP time BCF ../data/graphs/big_aug_dfs_1e7.txt 0 1" cutedges=5 k_factor=10
+# python3 exec_query.py kfact_dfs_10_6 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7.txt 0 1" cutedges=5 k_factor=10
+# 
+# python3 exec_query.py kfact_rd1_10_1 "SSSP time BCF ../data/graphs/big_aug_rd1_5e5.txt 0 1" cutedges=5 k_factor=10
+# python3 exec_query.py kfact_rd1_10_2 "SSSP time BCF ../data/graphs/big_aug_rd1_1e6.txt 0 1" cutedges=5 k_factor=10
+# python3 exec_query.py kfact_rd1_10_3 "SSSP time BCF ../data/graphs/big_aug_rd1_2e6.txt 0 1" cutedges=5 k_factor=10
+# python3 exec_query.py kfact_rd1_10_4 "SSSP time BCF ../data/graphs/big_aug_rd1_5e6.txt 0 1" cutedges=5 k_factor=10
+# python3 exec_query.py kfact_rd1_10_5 "SSSP time BCF ../data/graphs/big_aug_rd1_1e7.txt 0 1" cutedges=5 k_factor=10
+# python3 exec_query.py kfact_rd1_10_6 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7.txt 0 1" cutedges=5 k_factor=10
+# 
+# python3 exec_query.py kfact_rd2_10_1 "SSSP time BCF ../data/graphs/big_aug_rd2_5e5.txt 0 1" cutedges=5 k_factor=10
+# python3 exec_query.py kfact_rd2_10_2 "SSSP time BCF ../data/graphs/big_aug_rd2_1e6.txt 0 1" cutedges=5 k_factor=10
+# python3 exec_query.py kfact_rd2_10_3 "SSSP time BCF ../data/graphs/big_aug_rd2_2e6.txt 0 1" cutedges=5 k_factor=10
+# python3 exec_query.py kfact_rd2_10_4 "SSSP time BCF ../data/graphs/big_aug_rd2_5e6.txt 0 1" cutedges=5 k_factor=10
+# python3 exec_query.py kfact_rd2_10_5 "SSSP time BCF ../data/graphs/big_aug_rd2_1e7.txt 0 1" cutedges=5 k_factor=10
+# python3 exec_query.py kfact_rd2_10_6 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7.txt 0 1" cutedges=5 k_factor=10
+# 
+# python3 exec_query.py kfact_gor_10_1 "SSSP time BCF ../data/graphs/big_aug_gor_5e5.txt 0 1" cutedges=5 k_factor=10
+# python3 exec_query.py kfact_gor_10_2 "SSSP time BCF ../data/graphs/big_aug_gor_1e6.txt 0 1" cutedges=5 k_factor=10
+# python3 exec_query.py kfact_gor_10_3 "SSSP time BCF ../data/graphs/big_aug_gor_2e6.txt 0 1" cutedges=5 k_factor=10
+# python3 exec_query.py kfact_gor_10_4 "SSSP time BCF ../data/graphs/big_aug_gor_5e6.txt 0 1" cutedges=5 k_factor=10
+# python3 exec_query.py kfact_gor_10_5 "SSSP time BCF ../data/graphs/big_aug_gor_1e7.txt 0 1" cutedges=5 k_factor=10
+# python3 exec_query.py kfact_gor_10_6 "SSSP time BCF ../data/graphs/big_aug_gor_2e7.txt 0 1" cutedges=5 k_factor=10
+
+python3 exec_query.py kfact2e7_bfct_10_1 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7.txt 0 1" cutedges=5 k_factor=10
+python3 exec_query.py kfact2e7_bfct_10_2 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7_v2.txt 0 1" cutedges=5 k_factor=10
+python3 exec_query.py kfact2e7_bfct_10_3 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7_v3.txt 0 1" cutedges=5 k_factor=10
+python3 exec_query.py kfact2e7_bfct_10_4 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7_v4.txt 0 1" cutedges=5 k_factor=10
+python3 exec_query.py kfact2e7_bfct_10_5 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7_v5.txt 0 1" cutedges=5 k_factor=10
+
+python3 exec_query.py kfact2e7_dfs_10_1 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7.txt 0 1" cutedges=5 k_factor=10
+python3 exec_query.py kfact2e7_dfs_10_2 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7_v2.txt 0 1" cutedges=5 k_factor=10
+python3 exec_query.py kfact2e7_dfs_10_3 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7_v3.txt 0 1" cutedges=5 k_factor=10
+python3 exec_query.py kfact2e7_dfs_10_4 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7_v4.txt 0 1" cutedges=5 k_factor=10
+python3 exec_query.py kfact2e7_dfs_10_5 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7_v5.txt 0 1" cutedges=5 k_factor=10
+
+python3 exec_query.py kfact2e7_rd1_10_1 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7.txt 0 1" cutedges=5 k_factor=10
+python3 exec_query.py kfact2e7_rd1_10_2 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7_v2.txt 0 1" cutedges=5 k_factor=10
+python3 exec_query.py kfact2e7_rd1_10_3 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7_v3.txt 0 1" cutedges=5 k_factor=10
+python3 exec_query.py kfact2e7_rd1_10_4 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7_v4.txt 0 1" cutedges=5 k_factor=10
+python3 exec_query.py kfact2e7_rd1_10_5 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7_v5.txt 0 1" cutedges=5 k_factor=10
+
+python3 exec_query.py kfact2e7_rd2_10_1 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7.txt 0 1" cutedges=5 k_factor=10
+python3 exec_query.py kfact2e7_rd2_10_2 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7_v2.txt 0 1" cutedges=5 k_factor=10
+python3 exec_query.py kfact2e7_rd2_10_3 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7_v3.txt 0 1" cutedges=5 k_factor=10
+python3 exec_query.py kfact2e7_rd2_10_4 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7_v4.txt 0 1" cutedges=5 k_factor=10
+python3 exec_query.py kfact2e7_rd2_10_5 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7_v5.txt 0 1" cutedges=5 k_factor=10
+
+python3 exec_query.py kfact2e7_gor_10_1 "SSSP time BCF ../data/graphs/big_aug_gor_2e7.txt 0 1" cutedges=5 k_factor=10
+python3 exec_query.py kfact2e7_gor_10_2 "SSSP time BCF ../data/graphs/big_aug_gor_2e7_v2.txt 0 1" cutedges=5 k_factor=10
+python3 exec_query.py kfact2e7_gor_10_3 "SSSP time BCF ../data/graphs/big_aug_gor_2e7_v3.txt 0 1" cutedges=5 k_factor=10
+python3 exec_query.py kfact2e7_gor_10_4 "SSSP time BCF ../data/graphs/big_aug_gor_2e7_v4.txt 0 1" cutedges=5 k_factor=10
+python3 exec_query.py kfact2e7_gor_10_5 "SSSP time BCF ../data/graphs/big_aug_gor_2e7_v5.txt 0 1" cutedges=5 k_factor=10
+
+
+# k_factor=20
+
+# python3 exec_query.py kfact_bfct_20_1 "SSSP time BCF ../data/graphs/big_aug_bfct_5e5.txt 0 1" cutedges=5 k_factor=20
+# python3 exec_query.py kfact_bfct_20_2 "SSSP time BCF ../data/graphs/big_aug_bfct_1e6.txt 0 1" cutedges=5 k_factor=20
+# python3 exec_query.py kfact_bfct_20_3 "SSSP time BCF ../data/graphs/big_aug_bfct_2e6.txt 0 1" cutedges=5 k_factor=20
+# python3 exec_query.py kfact_bfct_20_4 "SSSP time BCF ../data/graphs/big_aug_bfct_5e6.txt 0 1" cutedges=5 k_factor=20
+# python3 exec_query.py kfact_bfct_20_5 "SSSP time BCF ../data/graphs/big_aug_bfct_1e7.txt 0 1" cutedges=5 k_factor=20
+# python3 exec_query.py kfact_bfct_20_6 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7.txt 0 1" cutedges=5 k_factor=20
+# 
+# python3 exec_query.py kfact_dfs_20_1 "SSSP time BCF ../data/graphs/big_aug_dfs_5e5.txt 0 1" cutedges=5 k_factor=20
+# python3 exec_query.py kfact_dfs_20_2 "SSSP time BCF ../data/graphs/big_aug_dfs_1e6.txt 0 1" cutedges=5 k_factor=20
+# python3 exec_query.py kfact_dfs_20_3 "SSSP time BCF ../data/graphs/big_aug_dfs_2e6.txt 0 1" cutedges=5 k_factor=20
+# python3 exec_query.py kfact_dfs_20_4 "SSSP time BCF ../data/graphs/big_aug_dfs_5e6.txt 0 1" cutedges=5 k_factor=20
+# python3 exec_query.py kfact_dfs_20_5 "SSSP time BCF ../data/graphs/big_aug_dfs_1e7.txt 0 1" cutedges=5 k_factor=20
+# python3 exec_query.py kfact_dfs_20_6 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7.txt 0 1" cutedges=5 k_factor=20
+# 
+# python3 exec_query.py kfact_rd1_20_1 "SSSP time BCF ../data/graphs/big_aug_rd1_5e5.txt 0 1" cutedges=5 k_factor=20
+# python3 exec_query.py kfact_rd1_20_2 "SSSP time BCF ../data/graphs/big_aug_rd1_1e6.txt 0 1" cutedges=5 k_factor=20
+# python3 exec_query.py kfact_rd1_20_3 "SSSP time BCF ../data/graphs/big_aug_rd1_2e6.txt 0 1" cutedges=5 k_factor=20
+# python3 exec_query.py kfact_rd1_20_4 "SSSP time BCF ../data/graphs/big_aug_rd1_5e6.txt 0 1" cutedges=5 k_factor=20
+# python3 exec_query.py kfact_rd1_20_5 "SSSP time BCF ../data/graphs/big_aug_rd1_1e7.txt 0 1" cutedges=5 k_factor=20
+# python3 exec_query.py kfact_rd1_20_6 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7.txt 0 1" cutedges=5 k_factor=20
+# 
+# python3 exec_query.py kfact_rd2_20_1 "SSSP time BCF ../data/graphs/big_aug_rd2_5e5.txt 0 1" cutedges=5 k_factor=20
+# python3 exec_query.py kfact_rd2_20_2 "SSSP time BCF ../data/graphs/big_aug_rd2_1e6.txt 0 1" cutedges=5 k_factor=20
+# python3 exec_query.py kfact_rd2_20_3 "SSSP time BCF ../data/graphs/big_aug_rd2_2e6.txt 0 1" cutedges=5 k_factor=20
+# python3 exec_query.py kfact_rd2_20_4 "SSSP time BCF ../data/graphs/big_aug_rd2_5e6.txt 0 1" cutedges=5 k_factor=20
+# python3 exec_query.py kfact_rd2_20_5 "SSSP time BCF ../data/graphs/big_aug_rd2_1e7.txt 0 1" cutedges=5 k_factor=20
+# python3 exec_query.py kfact_rd2_20_6 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7.txt 0 1" cutedges=5 k_factor=20
+# 
+# python3 exec_query.py kfact_gor_20_1 "SSSP time BCF ../data/graphs/big_aug_gor_5e5.txt 0 1" cutedges=5 k_factor=20
+# python3 exec_query.py kfact_gor_20_2 "SSSP time BCF ../data/graphs/big_aug_gor_1e6.txt 0 1" cutedges=5 k_factor=20
+# python3 exec_query.py kfact_gor_20_3 "SSSP time BCF ../data/graphs/big_aug_gor_2e6.txt 0 1" cutedges=5 k_factor=20
+# python3 exec_query.py kfact_gor_20_4 "SSSP time BCF ../data/graphs/big_aug_gor_5e6.txt 0 1" cutedges=5 k_factor=20
+# python3 exec_query.py kfact_gor_20_5 "SSSP time BCF ../data/graphs/big_aug_gor_1e7.txt 0 1" cutedges=5 k_factor=20
+# python3 exec_query.py kfact_gor_20_6 "SSSP time BCF ../data/graphs/big_aug_gor_2e7.txt 0 1" cutedges=5 k_factor=20
+
+python3 exec_query.py kfact2e7_bfct_20_1 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7.txt 0 1" cutedges=5 k_factor=20
+python3 exec_query.py kfact2e7_bfct_20_2 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7_v2.txt 0 1" cutedges=5 k_factor=20
+python3 exec_query.py kfact2e7_bfct_20_3 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7_v3.txt 0 1" cutedges=5 k_factor=20
+python3 exec_query.py kfact2e7_bfct_20_4 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7_v4.txt 0 1" cutedges=5 k_factor=20
+python3 exec_query.py kfact2e7_bfct_20_5 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7_v5.txt 0 1" cutedges=5 k_factor=20
+
+python3 exec_query.py kfact2e7_dfs_20_1 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7.txt 0 1" cutedges=5 k_factor=20
+python3 exec_query.py kfact2e7_dfs_20_2 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7_v2.txt 0 1" cutedges=5 k_factor=20
+python3 exec_query.py kfact2e7_dfs_20_3 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7_v3.txt 0 1" cutedges=5 k_factor=20
+python3 exec_query.py kfact2e7_dfs_20_4 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7_v4.txt 0 1" cutedges=5 k_factor=20
+python3 exec_query.py kfact2e7_dfs_20_5 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7_v5.txt 0 1" cutedges=5 k_factor=20
+
+python3 exec_query.py kfact2e7_rd1_20_1 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7.txt 0 1" cutedges=5 k_factor=20
+python3 exec_query.py kfact2e7_rd1_20_2 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7_v2.txt 0 1" cutedges=5 k_factor=20
+python3 exec_query.py kfact2e7_rd1_20_3 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7_v3.txt 0 1" cutedges=5 k_factor=20
+python3 exec_query.py kfact2e7_rd1_20_4 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7_v4.txt 0 1" cutedges=5 k_factor=20
+python3 exec_query.py kfact2e7_rd1_20_5 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7_v5.txt 0 1" cutedges=5 k_factor=20
+
+python3 exec_query.py kfact2e7_rd2_20_1 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7.txt 0 1" cutedges=5 k_factor=20
+python3 exec_query.py kfact2e7_rd2_20_2 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7_v2.txt 0 1" cutedges=5 k_factor=20
+python3 exec_query.py kfact2e7_rd2_20_3 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7_v3.txt 0 1" cutedges=5 k_factor=20
+python3 exec_query.py kfact2e7_rd2_20_4 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7_v4.txt 0 1" cutedges=5 k_factor=20
+python3 exec_query.py kfact2e7_rd2_20_5 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7_v5.txt 0 1" cutedges=5 k_factor=20
+
+python3 exec_query.py kfact2e7_gor_20_1 "SSSP time BCF ../data/graphs/big_aug_gor_2e7.txt 0 1" cutedges=5 k_factor=20
+python3 exec_query.py kfact2e7_gor_20_2 "SSSP time BCF ../data/graphs/big_aug_gor_2e7_v2.txt 0 1" cutedges=5 k_factor=20
+python3 exec_query.py kfact2e7_gor_20_3 "SSSP time BCF ../data/graphs/big_aug_gor_2e7_v3.txt 0 1" cutedges=5 k_factor=20
+python3 exec_query.py kfact2e7_gor_20_4 "SSSP time BCF ../data/graphs/big_aug_gor_2e7_v4.txt 0 1" cutedges=5 k_factor=20
+python3 exec_query.py kfact2e7_gor_20_5 "SSSP time BCF ../data/graphs/big_aug_gor_2e7_v5.txt 0 1" cutedges=5 k_factor=20
+
+# k_factor=40
+
+# python3 exec_query.py kfact_bfct_40_1 "SSSP time BCF ../data/graphs/big_aug_bfct_5e5.txt 0 1" cutedges=5 k_factor=40
+# python3 exec_query.py kfact_bfct_40_2 "SSSP time BCF ../data/graphs/big_aug_bfct_1e6.txt 0 1" cutedges=5 k_factor=40
+# python3 exec_query.py kfact_bfct_40_3 "SSSP time BCF ../data/graphs/big_aug_bfct_2e6.txt 0 1" cutedges=5 k_factor=40
+# python3 exec_query.py kfact_bfct_40_4 "SSSP time BCF ../data/graphs/big_aug_bfct_5e6.txt 0 1" cutedges=5 k_factor=40
+# python3 exec_query.py kfact_bfct_40_5 "SSSP time BCF ../data/graphs/big_aug_bfct_1e7.txt 0 1" cutedges=5 k_factor=40
+# python3 exec_query.py kfact_bfct_40_6 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7.txt 0 1" cutedges=5 k_factor=40
+# 
+# python3 exec_query.py kfact_dfs_40_1 "SSSP time BCF ../data/graphs/big_aug_dfs_5e5.txt 0 1" cutedges=5 k_factor=40
+# python3 exec_query.py kfact_dfs_40_2 "SSSP time BCF ../data/graphs/big_aug_dfs_1e6.txt 0 1" cutedges=5 k_factor=40
+# python3 exec_query.py kfact_dfs_40_3 "SSSP time BCF ../data/graphs/big_aug_dfs_2e6.txt 0 1" cutedges=5 k_factor=40
+# python3 exec_query.py kfact_dfs_40_4 "SSSP time BCF ../data/graphs/big_aug_dfs_5e6.txt 0 1" cutedges=5 k_factor=40
+# python3 exec_query.py kfact_dfs_40_5 "SSSP time BCF ../data/graphs/big_aug_dfs_1e7.txt 0 1" cutedges=5 k_factor=40
+# python3 exec_query.py kfact_dfs_40_6 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7.txt 0 1" cutedges=5 k_factor=40
+# 
+# python3 exec_query.py kfact_rd1_40_1 "SSSP time BCF ../data/graphs/big_aug_rd1_5e5.txt 0 1" cutedges=5 k_factor=40
+# python3 exec_query.py kfact_rd1_40_2 "SSSP time BCF ../data/graphs/big_aug_rd1_1e6.txt 0 1" cutedges=5 k_factor=40
+# python3 exec_query.py kfact_rd1_40_3 "SSSP time BCF ../data/graphs/big_aug_rd1_2e6.txt 0 1" cutedges=5 k_factor=40
+# python3 exec_query.py kfact_rd1_40_4 "SSSP time BCF ../data/graphs/big_aug_rd1_5e6.txt 0 1" cutedges=5 k_factor=40
+# python3 exec_query.py kfact_rd1_40_5 "SSSP time BCF ../data/graphs/big_aug_rd1_1e7.txt 0 1" cutedges=5 k_factor=40
+# python3 exec_query.py kfact_rd1_40_6 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7.txt 0 1" cutedges=5 k_factor=40
+# 
+# python3 exec_query.py kfact_rd2_40_1 "SSSP time BCF ../data/graphs/big_aug_rd2_5e5.txt 0 1" cutedges=5 k_factor=40
+# python3 exec_query.py kfact_rd2_40_2 "SSSP time BCF ../data/graphs/big_aug_rd2_1e6.txt 0 1" cutedges=5 k_factor=40
+# python3 exec_query.py kfact_rd2_40_3 "SSSP time BCF ../data/graphs/big_aug_rd2_2e6.txt 0 1" cutedges=5 k_factor=40
+# python3 exec_query.py kfact_rd2_40_4 "SSSP time BCF ../data/graphs/big_aug_rd2_5e6.txt 0 1" cutedges=5 k_factor=40
+# python3 exec_query.py kfact_rd2_40_5 "SSSP time BCF ../data/graphs/big_aug_rd2_1e7.txt 0 1" cutedges=5 k_factor=40
+# python3 exec_query.py kfact_rd2_40_6 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7.txt 0 1" cutedges=5 k_factor=40
+# 
+# python3 exec_query.py kfact_gor_40_1 "SSSP time BCF ../data/graphs/big_aug_gor_5e5.txt 0 1" cutedges=5 k_factor=40
+# python3 exec_query.py kfact_gor_40_2 "SSSP time BCF ../data/graphs/big_aug_gor_1e6.txt 0 1" cutedges=5 k_factor=40
+# python3 exec_query.py kfact_gor_40_3 "SSSP time BCF ../data/graphs/big_aug_gor_2e6.txt 0 1" cutedges=5 k_factor=40
+# python3 exec_query.py kfact_gor_40_4 "SSSP time BCF ../data/graphs/big_aug_gor_5e6.txt 0 1" cutedges=5 k_factor=40
+# python3 exec_query.py kfact_gor_40_5 "SSSP time BCF ../data/graphs/big_aug_gor_1e7.txt 0 1" cutedges=5 k_factor=40
+# python3 exec_query.py kfact_gor_40_6 "SSSP time BCF ../data/graphs/big_aug_gor_2e7.txt 0 1" cutedges=5 k_factor=40
+
+python3 exec_query.py kfact2e7_bfct_40_1 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7.txt 0 1" cutedges=5 k_factor=40
+python3 exec_query.py kfact2e7_bfct_40_2 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7_v2.txt 0 1" cutedges=5 k_factor=40
+python3 exec_query.py kfact2e7_bfct_40_3 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7_v3.txt 0 1" cutedges=5 k_factor=40
+python3 exec_query.py kfact2e7_bfct_40_4 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7_v4.txt 0 1" cutedges=5 k_factor=40
+python3 exec_query.py kfact2e7_bfct_40_5 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7_v5.txt 0 1" cutedges=5 k_factor=40
+
+python3 exec_query.py kfact2e7_dfs_40_1 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7.txt 0 1" cutedges=5 k_factor=40
+python3 exec_query.py kfact2e7_dfs_40_2 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7_v2.txt 0 1" cutedges=5 k_factor=40
+python3 exec_query.py kfact2e7_dfs_40_3 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7_v3.txt 0 1" cutedges=5 k_factor=40
+python3 exec_query.py kfact2e7_dfs_40_4 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7_v4.txt 0 1" cutedges=5 k_factor=40
+python3 exec_query.py kfact2e7_dfs_40_5 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7_v5.txt 0 1" cutedges=5 k_factor=40
+
+python3 exec_query.py kfact2e7_rd1_40_1 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7.txt 0 1" cutedges=5 k_factor=40
+python3 exec_query.py kfact2e7_rd1_40_2 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7_v2.txt 0 1" cutedges=5 k_factor=40
+python3 exec_query.py kfact2e7_rd1_40_3 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7_v3.txt 0 1" cutedges=5 k_factor=40
+python3 exec_query.py kfact2e7_rd1_40_4 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7_v4.txt 0 1" cutedges=5 k_factor=40
+python3 exec_query.py kfact2e7_rd1_40_5 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7_v5.txt 0 1" cutedges=5 k_factor=40
+
+python3 exec_query.py kfact2e7_rd2_40_1 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7.txt 0 1" cutedges=5 k_factor=40
+python3 exec_query.py kfact2e7_rd2_40_2 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7_v2.txt 0 1" cutedges=5 k_factor=40
+python3 exec_query.py kfact2e7_rd2_40_3 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7_v3.txt 0 1" cutedges=5 k_factor=40
+python3 exec_query.py kfact2e7_rd2_40_4 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7_v4.txt 0 1" cutedges=5 k_factor=40
+python3 exec_query.py kfact2e7_rd2_40_5 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7_v5.txt 0 1" cutedges=5 k_factor=40
+
+python3 exec_query.py kfact2e7_gor_40_1 "SSSP time BCF ../data/graphs/big_aug_gor_2e7.txt 0 1" cutedges=5 k_factor=40
+python3 exec_query.py kfact2e7_gor_40_2 "SSSP time BCF ../data/graphs/big_aug_gor_2e7_v2.txt 0 1" cutedges=5 k_factor=40
+python3 exec_query.py kfact2e7_gor_40_3 "SSSP time BCF ../data/graphs/big_aug_gor_2e7_v3.txt 0 1" cutedges=5 k_factor=40
+python3 exec_query.py kfact2e7_gor_40_4 "SSSP time BCF ../data/graphs/big_aug_gor_2e7_v4.txt 0 1" cutedges=5 k_factor=40
+python3 exec_query.py kfact2e7_gor_40_5 "SSSP time BCF ../data/graphs/big_aug_gor_2e7_v5.txt 0 1" cutedges=5 k_factor=40
+
+# k_factor=inf
+
+# python3 exec_query.py kfact_bfct_inf_1 "SSSP time BCF ../data/graphs/big_aug_bfct_5e5.txt 0 1" cutedges=5 k_factor=1000000
+# python3 exec_query.py kfact_bfct_inf_2 "SSSP time BCF ../data/graphs/big_aug_bfct_1e6.txt 0 1" cutedges=5 k_factor=1000000
+# python3 exec_query.py kfact_bfct_inf_3 "SSSP time BCF ../data/graphs/big_aug_bfct_2e6.txt 0 1" cutedges=5 k_factor=1000000
+# python3 exec_query.py kfact_bfct_inf_4 "SSSP time BCF ../data/graphs/big_aug_bfct_5e6.txt 0 1" cutedges=5 k_factor=1000000
+# python3 exec_query.py kfact_bfct_inf_5 "SSSP time BCF ../data/graphs/big_aug_bfct_1e7.txt 0 1" cutedges=5 k_factor=1000000
+# python3 exec_query.py kfact_bfct_inf_6 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7.txt 0 1" cutedges=5 k_factor=1000000
+# 
+# python3 exec_query.py kfact_dfs_inf_1 "SSSP time BCF ../data/graphs/big_aug_dfs_5e5.txt 0 1" cutedges=5 k_factor=1000000
+# python3 exec_query.py kfact_dfs_inf_2 "SSSP time BCF ../data/graphs/big_aug_dfs_1e6.txt 0 1" cutedges=5 k_factor=1000000
+# python3 exec_query.py kfact_dfs_inf_3 "SSSP time BCF ../data/graphs/big_aug_dfs_2e6.txt 0 1" cutedges=5 k_factor=1000000
+# python3 exec_query.py kfact_dfs_inf_4 "SSSP time BCF ../data/graphs/big_aug_dfs_5e6.txt 0 1" cutedges=5 k_factor=1000000
+# python3 exec_query.py kfact_dfs_inf_5 "SSSP time BCF ../data/graphs/big_aug_dfs_1e7.txt 0 1" cutedges=5 k_factor=1000000
+# python3 exec_query.py kfact_dfs_inf_6 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7.txt 0 1" cutedges=5 k_factor=1000000
+# 
+# python3 exec_query.py kfact_rd1_inf_1 "SSSP time BCF ../data/graphs/big_aug_rd1_5e5.txt 0 1" cutedges=5 k_factor=1000000
+# python3 exec_query.py kfact_rd1_inf_2 "SSSP time BCF ../data/graphs/big_aug_rd1_1e6.txt 0 1" cutedges=5 k_factor=1000000
+# python3 exec_query.py kfact_rd1_inf_3 "SSSP time BCF ../data/graphs/big_aug_rd1_2e6.txt 0 1" cutedges=5 k_factor=1000000
+# python3 exec_query.py kfact_rd1_inf_4 "SSSP time BCF ../data/graphs/big_aug_rd1_5e6.txt 0 1" cutedges=5 k_factor=1000000
+# python3 exec_query.py kfact_rd1_inf_5 "SSSP time BCF ../data/graphs/big_aug_rd1_1e7.txt 0 1" cutedges=5 k_factor=1000000
+# python3 exec_query.py kfact_rd1_inf_6 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7.txt 0 1" cutedges=5 k_factor=1000000
+# 
+# python3 exec_query.py kfact_rd2_inf_1 "SSSP time BCF ../data/graphs/big_aug_rd2_5e5.txt 0 1" cutedges=5 k_factor=1000000
+# python3 exec_query.py kfact_rd2_inf_2 "SSSP time BCF ../data/graphs/big_aug_rd2_1e6.txt 0 1" cutedges=5 k_factor=1000000
+# python3 exec_query.py kfact_rd2_inf_3 "SSSP time BCF ../data/graphs/big_aug_rd2_2e6.txt 0 1" cutedges=5 k_factor=1000000
+# python3 exec_query.py kfact_rd2_inf_4 "SSSP time BCF ../data/graphs/big_aug_rd2_5e6.txt 0 1" cutedges=5 k_factor=1000000
+# python3 exec_query.py kfact_rd2_inf_5 "SSSP time BCF ../data/graphs/big_aug_rd2_1e7.txt 0 1" cutedges=5 k_factor=1000000
+# python3 exec_query.py kfact_rd2_inf_6 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7.txt 0 1" cutedges=5 k_factor=1000000
+# 
+# python3 exec_query.py kfact_gor_inf_1 "SSSP time BCF ../data/graphs/big_aug_gor_5e5.txt 0 1" cutedges=5 k_factor=1000000
+# python3 exec_query.py kfact_gor_inf_2 "SSSP time BCF ../data/graphs/big_aug_gor_1e6.txt 0 1" cutedges=5 k_factor=1000000
+# python3 exec_query.py kfact_gor_inf_3 "SSSP time BCF ../data/graphs/big_aug_gor_2e6.txt 0 1" cutedges=5 k_factor=1000000
+# python3 exec_query.py kfact_gor_inf_4 "SSSP time BCF ../data/graphs/big_aug_gor_5e6.txt 0 1" cutedges=5 k_factor=1000000
+# python3 exec_query.py kfact_gor_inf_5 "SSSP time BCF ../data/graphs/big_aug_gor_1e7.txt 0 1" cutedges=5 k_factor=1000000
+# python3 exec_query.py kfact_gor_inf_6 "SSSP time BCF ../data/graphs/big_aug_gor_2e7.txt 0 1" cutedges=5 k_factor=1000000
+
+python3 exec_query.py kfact2e7_bfct_inf_1 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7.txt 0 1" cutedges=5 k_factor=1000000
+python3 exec_query.py kfact2e7_bfct_inf_2 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7_v2.txt 0 1" cutedges=5 k_factor=1000000
+python3 exec_query.py kfact2e7_bfct_inf_3 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7_v3.txt 0 1" cutedges=5 k_factor=1000000
+python3 exec_query.py kfact2e7_bfct_inf_4 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7_v4.txt 0 1" cutedges=5 k_factor=1000000
+python3 exec_query.py kfact2e7_bfct_inf_5 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7_v5.txt 0 1" cutedges=5 k_factor=1000000
+
+python3 exec_query.py kfact2e7_dfs_inf_1 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7.txt 0 1" cutedges=5 k_factor=1000000
+python3 exec_query.py kfact2e7_dfs_inf_2 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7_v2.txt 0 1" cutedges=5 k_factor=1000000
+python3 exec_query.py kfact2e7_dfs_inf_3 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7_v3.txt 0 1" cutedges=5 k_factor=1000000
+python3 exec_query.py kfact2e7_dfs_inf_4 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7_v4.txt 0 1" cutedges=5 k_factor=1000000
+python3 exec_query.py kfact2e7_dfs_inf_5 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7_v5.txt 0 1" cutedges=5 k_factor=1000000
+
+python3 exec_query.py kfact2e7_rd1_inf_1 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7.txt 0 1" cutedges=5 k_factor=1000000
+python3 exec_query.py kfact2e7_rd1_inf_2 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7_v2.txt 0 1" cutedges=5 k_factor=1000000
+python3 exec_query.py kfact2e7_rd1_inf_3 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7_v3.txt 0 1" cutedges=5 k_factor=1000000
+python3 exec_query.py kfact2e7_rd1_inf_4 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7_v4.txt 0 1" cutedges=5 k_factor=1000000
+python3 exec_query.py kfact2e7_rd1_inf_5 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7_v5.txt 0 1" cutedges=5 k_factor=1000000
+
+python3 exec_query.py kfact2e7_rd2_inf_1 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7.txt 0 1" cutedges=5 k_factor=1000000
+python3 exec_query.py kfact2e7_rd2_inf_2 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7_v2.txt 0 1" cutedges=5 k_factor=1000000
+python3 exec_query.py kfact2e7_rd2_inf_3 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7_v3.txt 0 1" cutedges=5 k_factor=1000000
+python3 exec_query.py kfact2e7_rd2_inf_4 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7_v4.txt 0 1" cutedges=5 k_factor=1000000
+python3 exec_query.py kfact2e7_rd2_inf_5 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7_v5.txt 0 1" cutedges=5 k_factor=1000000
+
+python3 exec_query.py kfact2e7_gor_inf_1 "SSSP time BCF ../data/graphs/big_aug_gor_2e7.txt 0 1" cutedges=5 k_factor=1000000
+python3 exec_query.py kfact2e7_gor_inf_2 "SSSP time BCF ../data/graphs/big_aug_gor_2e7_v2.txt 0 1" cutedges=5 k_factor=1000000
+python3 exec_query.py kfact2e7_gor_inf_3 "SSSP time BCF ../data/graphs/big_aug_gor_2e7_v3.txt 0 1" cutedges=5 k_factor=1000000
+python3 exec_query.py kfact2e7_gor_inf_4 "SSSP time BCF ../data/graphs/big_aug_gor_2e7_v4.txt 0 1" cutedges=5 k_factor=1000000
+python3 exec_query.py kfact2e7_gor_inf_5 "SSSP time BCF ../data/graphs/big_aug_gor_2e7_v5.txt 0 1" cutedges=5 k_factor=1000000

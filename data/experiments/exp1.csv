@@ -1,0 +1,7 @@
+timestamp,alg_goal,exp_type,alg_name,filename,source,reps,use_lazy,init_kappa,k_factor,rand_label,fixdagedges,cutedges,rec_limit,cutedgesseed,diam_apprx,ol_seed,il_seed,eg_sort_scc,avg_time,std,min,max,n,m
+2024-06-13 13:49:52,SSSP,time,BCF,../data/graphs/med_aug_bfct_10e6.txt,0,2,1,0,1,0,1,1,100,1234,0,1234,12134,0,4180.9,154.47,4026.5,4335.4,133331,999972
+2024-06-13 13:50:01,SSSP,time,BCF,../data/graphs/med_aug_bfct_10e6.txt,0,2,1,0,1,0,1,2,100,1234,0,1234,12134,0,3704.6,115.57,3589.1,3820.2,133331,999972
+2024-06-13 13:50:38,SSSP,time,BCF,../data/graphs/med_aug_bfct_10e6.txt,0,2,1,0,1,0,1,1,100,1234,0,1234,12134,0,4283.9,158.99,4124.9,4442.9,133331,999972
+2024-06-13 13:50:47,SSSP,time,BCF,../data/graphs/med_aug_bfct_10e6.txt,0,2,1,0,1,0,1,2,100,1234,0,1234,12134,0,3693.1,135.4,3557.7,3828.5,133331,999972
+2024-06-13 13:51:23,SSSP,time,BCF,../data/graphs/med_aug_bfct_10e6.txt,0,2,1,0,1,0,1,1,100,1234,0,1234,12134,0,5082.3,126.38,4955.9,5208.7,133331,999972
+2024-06-13 13:51:35,SSSP,time,BCF,../data/graphs/med_aug_bfct_10e6.txt,0,2,1,0,1,0,1,2,100,1234,0,1234,12134,0,4005.8,163.91,3841.9,4169.7,133331,999972

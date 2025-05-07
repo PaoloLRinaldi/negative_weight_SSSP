@@ -1,0 +1,6 @@
+timestamp,alg_goal,exp_type,alg_name,filename,source,reps,use_lazy,init_kappa,k_factor,rand_label,fixdagedges,cutedges,rec_limit,cutedgesseed,diam_apprx,ol_seed,il_seed,eg_sort_scc,avg_time,std,min,max,n,m,exp_name
+2024-07-12 14:57:26,SSSP,time,BCF,../data/graphs/big_rand_5e5.txt,0,1,1,0,1,0,1,1,100,1234,0,1234,12134,0,43231.0,0,43231.0,43231.0,83333,500000,nbvg_bcf_rand_1_1
+2024-07-12 15:00:57,SSSP,time,BCF,../data/graphs/big_rand_5e5.txt,0,1,1,0,40,0,1,5,100,1234,1,1234,12134,0,824.82,0,824.82,824.82,83333,500000,nbvg_bcf_rand_1_1
+2024-07-12 15:03:08,SSSP,time,BCF,../data/graphs/big_rand_5e5.txt,0,1,1,0,40,0,1,5,100,1234,1,1234,12134,0,740.65,0,740.65,740.65,83333,500000,nbvg_bcf_rand_1_1
+2024-07-15 20:24:06,SSSP,time,BCF,../data/graphs/big_rand_5e5.txt,0,1,1,0,40,0,1,5,100,9876,1,1234,12134,0,807.3,0,807.3,807.3,83333,500000,nbvg_bcf_rand_1_1
+2024-07-15 21:23:08,SSSP,time,BCF,../data/graphs/big_rand_5e5.txt,0,1,1,0,40,0,1,5,100,9876,1,1234,12134,0,745.52,0,745.52,745.52,83333,500000,nbvg_bcf_rand_1_1

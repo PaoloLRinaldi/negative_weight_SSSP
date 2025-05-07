@@ -1,0 +1,46 @@
+# launch with:
+# cat ../data/queries/bad_bcf_vs_gor_queries.txt | parallel -j 4 {}
+
+# GOR
+
+# BFCT
+
+python3 exec_query.py bad_gor_bfct_1_2 "SSSP time GOR ../data/graphs/big_bfct_1e6.txt 0 5"
+
+# DFS
+
+python3 exec_query.py bad_gor_dfs_1_2 "SSSP time GOR ../data/graphs/big_dfs_1e6.txt 0 5"
+
+# RD1
+
+python3 exec_query.py bad_gor_rd1_1_2 "SSSP time GOR ../data/graphs/big_rd1_1e6.txt 0 5"
+
+# RD2
+
+python3 exec_query.py bad_gor_rd2_1_2 "SSSP time GOR ../data/graphs/big_rd2_1e6.txt 0 5"
+
+# GOR
+
+python3 exec_query.py bad_gor_gor_1_2 "SSSP time GOR ../data/graphs/big_gor_1e6.txt 0 5"
+
+# BCF
+
+# BFCT
+
+python3 exec_query.py bad_bcf_bfct_1_2 "SSSP time BCF ../data/graphs/big_bfct_1e6.txt 0 5" diam_apprx=1 k_factor=40 cutedges=5
+
+# DFS
+
+python3 exec_query.py bad_bcf_dfs_1_2 "SSSP time BCF ../data/graphs/big_dfs_1e6.txt 0 5" diam_apprx=1 k_factor=40 cutedges=5
+
+# RD1
+
+python3 exec_query.py bad_bcf_rd1_1_2 "SSSP time BCF ../data/graphs/big_rd1_1e6.txt 0 5" diam_apprx=1 k_factor=40 cutedges=5
+
+# RD2
+
+python3 exec_query.py bad_bcf_rd2_1_2 "SSSP time BCF ../data/graphs/big_rd2_1e6.txt 0 5" diam_apprx=1 k_factor=40 cutedges=5
+
+# GOR
+
+python3 exec_query.py bad_bcf_gor_1_2 "SSSP time BCF ../data/graphs/big_gor_1e6.txt 0 5" diam_apprx=1 k_factor=40 cutedges=5

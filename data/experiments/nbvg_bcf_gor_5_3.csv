@@ -1,0 +1,6 @@
+timestamp,alg_goal,exp_type,alg_name,filename,source,reps,use_lazy,init_kappa,k_factor,rand_label,fixdagedges,cutedges,rec_limit,cutedgesseed,diam_apprx,ol_seed,il_seed,eg_sort_scc,avg_time,std,min,max,n,m,exp_name
+2024-07-09 16:58:48,SSSP,time,BCF,../data/graphs/big_aug_gor_2e6_v5.txt,0,1,1,0,1,0,1,1,100,1234,0,1234,12134,0,17472,0,17472,17472,222223,1999992,nbvg_bcf_gor_5_3
+2024-07-10 16:02:44,SSSP,time,BCF,../data/graphs/big_aug_gor_2e6_v5.txt,0,1,1,0,40,0,1,5,100,1234,1,1234,12134,0,16812,0,16812,16812,222223,1999992,nbvg_bcf_gor_5_3
+2024-07-12 15:48:47,SSSP,time,BCF,../data/graphs/big_aug_gor_2e6_v5.txt,0,1,1,0,40,0,1,5,100,1234,1,1234,12134,0,11436,0,11436,11436,222223,1999992,nbvg_bcf_gor_5_3
+2024-07-15 20:21:34,SSSP,time,BCF,../data/graphs/big_aug_gor_2e6_v5.txt,0,1,1,0,40,0,1,5,100,9876,1,1234,12134,0,12271,0,12271,12271,222223,1999992,nbvg_bcf_gor_5_3
+2024-07-15 21:21:44,SSSP,time,BCF,../data/graphs/big_aug_gor_2e6_v5.txt,0,1,1,0,40,0,1,5,100,9876,1,1234,12134,0,3733.5,0,3733.5,3733.5,222223,1999992,nbvg_bcf_gor_5_3

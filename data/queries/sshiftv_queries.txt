@@ -1,0 +1,78 @@
+# launch with:
+# cat ../data/queries/sshiftv_queries.txt | parallel -j 4 {}
+
+# BCF
+
+python3 exec_query.py sshiftv_bcf_1_1 "SSSP time BCF ../data/graphs/sshiftv1_aug_gor_5e5.txt 0 1" diam_apprx=1 cutedges=5 k_factor=40
+python3 exec_query.py sshiftv_bcf_1_2 "SSSP time BCF ../data/graphs/sshiftv1_aug_gor_1e6.txt 0 1" diam_apprx=1 cutedges=5 k_factor=40
+python3 exec_query.py sshiftv_bcf_1_3 "SSSP time BCF ../data/graphs/sshiftv1_aug_gor_2e6.txt 0 1" diam_apprx=1 cutedges=5 k_factor=40
+python3 exec_query.py sshiftv_bcf_1_4 "SSSP time BCF ../data/graphs/sshiftv1_aug_gor_5e6.txt 0 1" diam_apprx=1 cutedges=5 k_factor=40
+python3 exec_query.py sshiftv_bcf_1_5 "SSSP time BCF ../data/graphs/sshiftv1_aug_gor_1e7.txt 0 1" diam_apprx=1 cutedges=5 k_factor=40
+python3 exec_query.py sshiftv_bcf_1_6 "SSSP time BCF ../data/graphs/sshiftv1_aug_gor_2e7.txt 0 1" diam_apprx=1 cutedges=5 k_factor=40
+
+python3 exec_query.py sshiftv_bcf_2_1 "SSSP time BCF ../data/graphs/sshiftv2_aug_gor_5e5.txt 0 1" diam_apprx=1 cutedges=5 k_factor=40
+python3 exec_query.py sshiftv_bcf_2_2 "SSSP time BCF ../data/graphs/sshiftv2_aug_gor_1e6.txt 0 1" diam_apprx=1 cutedges=5 k_factor=40
+python3 exec_query.py sshiftv_bcf_2_3 "SSSP time BCF ../data/graphs/sshiftv2_aug_gor_2e6.txt 0 1" diam_apprx=1 cutedges=5 k_factor=40
+python3 exec_query.py sshiftv_bcf_2_4 "SSSP time BCF ../data/graphs/sshiftv2_aug_gor_5e6.txt 0 1" diam_apprx=1 cutedges=5 k_factor=40
+python3 exec_query.py sshiftv_bcf_2_5 "SSSP time BCF ../data/graphs/sshiftv2_aug_gor_1e7.txt 0 1" diam_apprx=1 cutedges=5 k_factor=40
+python3 exec_query.py sshiftv_bcf_2_6 "SSSP time BCF ../data/graphs/sshiftv2_aug_gor_2e7.txt 0 1" diam_apprx=1 cutedges=5 k_factor=40
+
+python3 exec_query.py sshiftv_bcf_3_1 "SSSP time BCF ../data/graphs/sshiftv3_aug_gor_5e5.txt 0 1" diam_apprx=1 cutedges=5 k_factor=40
+python3 exec_query.py sshiftv_bcf_3_2 "SSSP time BCF ../data/graphs/sshiftv3_aug_gor_1e6.txt 0 1" diam_apprx=1 cutedges=5 k_factor=40
+python3 exec_query.py sshiftv_bcf_3_3 "SSSP time BCF ../data/graphs/sshiftv3_aug_gor_2e6.txt 0 1" diam_apprx=1 cutedges=5 k_factor=40
+python3 exec_query.py sshiftv_bcf_3_4 "SSSP time BCF ../data/graphs/sshiftv3_aug_gor_5e6.txt 0 1" diam_apprx=1 cutedges=5 k_factor=40
+python3 exec_query.py sshiftv_bcf_3_5 "SSSP time BCF ../data/graphs/sshiftv3_aug_gor_1e7.txt 0 1" diam_apprx=1 cutedges=5 k_factor=40
+python3 exec_query.py sshiftv_bcf_3_6 "SSSP time BCF ../data/graphs/sshiftv3_aug_gor_2e7.txt 0 1" diam_apprx=1 cutedges=5 k_factor=40
+
+python3 exec_query.py sshiftv_bcf_4_1 "SSSP time BCF ../data/graphs/sshiftv4_aug_gor_5e5.txt 0 1" diam_apprx=1 cutedges=5 k_factor=40
+python3 exec_query.py sshiftv_bcf_4_2 "SSSP time BCF ../data/graphs/sshiftv4_aug_gor_1e6.txt 0 1" diam_apprx=1 cutedges=5 k_factor=40
+python3 exec_query.py sshiftv_bcf_4_3 "SSSP time BCF ../data/graphs/sshiftv4_aug_gor_2e6.txt 0 1" diam_apprx=1 cutedges=5 k_factor=40
+python3 exec_query.py sshiftv_bcf_4_4 "SSSP time BCF ../data/graphs/sshiftv4_aug_gor_5e6.txt 0 1" diam_apprx=1 cutedges=5 k_factor=40
+python3 exec_query.py sshiftv_bcf_4_5 "SSSP time BCF ../data/graphs/sshiftv4_aug_gor_1e7.txt 0 1" diam_apprx=1 cutedges=5 k_factor=40
+python3 exec_query.py sshiftv_bcf_4_6 "SSSP time BCF ../data/graphs/sshiftv4_aug_gor_2e7.txt 0 1" diam_apprx=1 cutedges=5 k_factor=40
+
+python3 exec_query.py sshiftv_bcf_5_1 "SSSP time BCF ../data/graphs/sshiftv5_aug_gor_5e5.txt 0 1" diam_apprx=1 cutedges=5 k_factor=40
+python3 exec_query.py sshiftv_bcf_5_2 "SSSP time BCF ../data/graphs/sshiftv5_aug_gor_1e6.txt 0 1" diam_apprx=1 cutedges=5 k_factor=40
+python3 exec_query.py sshiftv_bcf_5_3 "SSSP time BCF ../data/graphs/sshiftv5_aug_gor_2e6.txt 0 1" diam_apprx=1 cutedges=5 k_factor=40
+python3 exec_query.py sshiftv_bcf_5_4 "SSSP time BCF ../data/graphs/sshiftv5_aug_gor_5e6.txt 0 1" diam_apprx=1 cutedges=5 k_factor=40
+python3 exec_query.py sshiftv_bcf_5_5 "SSSP time BCF ../data/graphs/sshiftv5_aug_gor_1e7.txt 0 1" diam_apprx=1 cutedges=5 k_factor=40
+python3 exec_query.py sshiftv_bcf_5_6 "SSSP time BCF ../data/graphs/sshiftv5_aug_gor_2e7.txt 0 1" diam_apprx=1 cutedges=5 k_factor=40
+
+
+# GOR
+
+python3 exec_query.py sshiftv_gor_1_1 "SSSP time GOR ../data/graphs/sshiftv1_aug_gor_5e5.txt 0 1"
+python3 exec_query.py sshiftv_gor_1_2 "SSSP time GOR ../data/graphs/sshiftv1_aug_gor_1e6.txt 0 1"
+python3 exec_query.py sshiftv_gor_1_3 "SSSP time GOR ../data/graphs/sshiftv1_aug_gor_2e6.txt 0 1"
+python3 exec_query.py sshiftv_gor_1_4 "SSSP time GOR ../data/graphs/sshiftv1_aug_gor_5e6.txt 0 1"
+python3 exec_query.py sshiftv_gor_1_5 "SSSP time GOR ../data/graphs/sshiftv1_aug_gor_1e7.txt 0 1"
+python3 exec_query.py sshiftv_gor_1_6 "SSSP time GOR ../data/graphs/sshiftv1_aug_gor_2e7.txt 0 1"
+
+python3 exec_query.py sshiftv_gor_2_1 "SSSP time GOR ../data/graphs/sshiftv2_aug_gor_5e5.txt 0 1"
+python3 exec_query.py sshiftv_gor_2_2 "SSSP time GOR ../data/graphs/sshiftv2_aug_gor_1e6.txt 0 1"
+python3 exec_query.py sshiftv_gor_2_3 "SSSP time GOR ../data/graphs/sshiftv2_aug_gor_2e6.txt 0 1"
+python3 exec_query.py sshiftv_gor_2_4 "SSSP time GOR ../data/graphs/sshiftv2_aug_gor_5e6.txt 0 1"
+python3 exec_query.py sshiftv_gor_2_5 "SSSP time GOR ../data/graphs/sshiftv2_aug_gor_1e7.txt 0 1"
+python3 exec_query.py sshiftv_gor_2_6 "SSSP time GOR ../data/graphs/sshiftv2_aug_gor_2e7.txt 0 1"
+
+python3 exec_query.py sshiftv_gor_3_1 "SSSP time GOR ../data/graphs/sshiftv3_aug_gor_5e5.txt 0 1"
+python3 exec_query.py sshiftv_gor_3_2 "SSSP time GOR ../data/graphs/sshiftv3_aug_gor_1e6.txt 0 1"
+python3 exec_query.py sshiftv_gor_3_3 "SSSP time GOR ../data/graphs/sshiftv3_aug_gor_2e6.txt 0 1"
+python3 exec_query.py sshiftv_gor_3_4 "SSSP time GOR ../data/graphs/sshiftv3_aug_gor_5e6.txt 0 1"
+python3 exec_query.py sshiftv_gor_3_5 "SSSP time GOR ../data/graphs/sshiftv3_aug_gor_1e7.txt 0 1"
+python3 exec_query.py sshiftv_gor_3_6 "SSSP time GOR ../data/graphs/sshiftv3_aug_gor_2e7.txt 0 1"
+
+python3 exec_query.py sshiftv_gor_4_1 "SSSP time GOR ../data/graphs/sshiftv4_aug_gor_5e5.txt 0 1"
+python3 exec_query.py sshiftv_gor_4_2 "SSSP time GOR ../data/graphs/sshiftv4_aug_gor_1e6.txt 0 1"
+python3 exec_query.py sshiftv_gor_4_3 "SSSP time GOR ../data/graphs/sshiftv4_aug_gor_2e6.txt 0 1"
+python3 exec_query.py sshiftv_gor_4_4 "SSSP time GOR ../data/graphs/sshiftv4_aug_gor_5e6.txt 0 1"
+python3 exec_query.py sshiftv_gor_4_5 "SSSP time GOR ../data/graphs/sshiftv4_aug_gor_1e7.txt 0 1"
+python3 exec_query.py sshiftv_gor_4_6 "SSSP time GOR ../data/graphs/sshiftv4_aug_gor_2e7.txt 0 1"
+
+python3 exec_query.py sshiftv_gor_5_1 "SSSP time GOR ../data/graphs/sshiftv5_aug_gor_5e5.txt 0 1"
+python3 exec_query.py sshiftv_gor_5_2 "SSSP time GOR ../data/graphs/sshiftv5_aug_gor_1e6.txt 0 1"
+python3 exec_query.py sshiftv_gor_5_3 "SSSP time GOR ../data/graphs/sshiftv5_aug_gor_2e6.txt 0 1"
+python3 exec_query.py sshiftv_gor_5_4 "SSSP time GOR ../data/graphs/sshiftv5_aug_gor_5e6.txt 0 1"
+python3 exec_query.py sshiftv_gor_5_5 "SSSP time GOR ../data/graphs/sshiftv5_aug_gor_1e7.txt 0 1"
+python3 exec_query.py sshiftv_gor_5_6 "SSSP time GOR ../data/graphs/sshiftv5_aug_gor_2e7.txt 0 1"
+

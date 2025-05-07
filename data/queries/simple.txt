@@ -1,0 +1,9 @@
+SSSP check NaiveBFM ../data/graphs/simple1.txt 0
+SSSP check BFCT ../data/graphs/simple1.txt 0
+NegCycle check NaiveBFM ../data/graphs/simple1.txt
+SSSP check NaiveBFM ../data/graphs/positive.txt 0
+SSSP check Dijkstra ../data/graphs/positive.txt 0
+SSSP check BFCT ../data/graphs/positive.txt 0
+SSSP time BCF ../data/graphs/rand-rest-hard-400.txt 0 10
+SSSP check BCF ../data/graphs/rand-rest-hard-400.txt 0
+SSSP check BFCT ../data/graphs/rand-rest-hard-400.txt 0

@@ -1,0 +1,12 @@
+timestamp,alg_goal,exp_type,alg_name,filename,source,reps,use_lazy,init_kappa,k_factor,rand_label,fixdagedges,cutedges,rec_limit,cutedgesseed,diam_apprx,ol_seed,il_seed,eg_sort_scc,avg_time,std,min,max,n,m,exp_name
+2024-06-16 16:37:29,SSSP,time,BCF,../data/graphs/shift_aug_gor_5e5.txt,0,1,1,0,1,0,1,1,100,1234,0,1234,12134,0,13337.0,0.0,13337.0,13337.0,55541,555387,shift_bcf_1
+2024-06-16 16:37:42,SSSP,time,BCF,../data/graphs/shift_aug_gor_1e6.txt,0,1,1,0,1,0,1,1,100,1234,0,1234,12134,0,3606.6,0.0,3606.6,3606.6,111085,1110855,shift_bcf_1
+2024-06-16 16:44:29,SSSP,time,BCF,../data/graphs/shift_aug_gor_5e5.txt,0,1,1,0,1,0,1,1,100,1234,0,1234,12134,0,17879.0,0.0,17879.0,17879.0,55541,555387,shift_bcf_1
+2024-06-16 16:44:47,SSSP,time,BCF,../data/graphs/shift_aug_gor_1e6.txt,0,1,1,0,1,0,1,1,100,1234,0,1234,12134,0,3070.3,0.0,3070.3,3070.3,111085,1110855,shift_bcf_1
+2024-06-16 16:44:51,SSSP,time,BCF,../data/graphs/shift_aug_gor_2e6.txt,0,1,1,0,1,0,1,1,100,1234,0,1234,12134,0,398690.0,0.0,398690.0,398690.0,222153,2221535,shift_bcf_1
+2024-06-16 20:05:55,SSSP,time,BCF,../data/graphs/shift_aug_gor_5e5.txt,0,1,1,0,1,0,1,1,100,1234,0,1234,12134,0,13666.0,0.0,13666.0,13666.0,55541,555387,shift_bcf_1
+2024-06-16 20:06:09,SSSP,time,BCF,../data/graphs/shift_aug_gor_1e6.txt,0,1,1,0,1,0,1,1,100,1234,0,1234,12134,0,3994.2,0.0,3994.2,3994.2,111085,1110855,shift_bcf_1
+2024-06-16 20:06:14,SSSP,time,BCF,../data/graphs/shift_aug_gor_2e6.txt,0,1,1,0,1,0,1,1,100,1234,0,1234,12134,0,379440.0,0.0,379440.0,379440.0,222153,2221535,shift_bcf_1
+2024-06-20 16:46:07,SSSP,time,BCF,../data/graphs/shift2_aug_gor_1e6.txt,0,2,1,0,1,0,1,1,100,1234,0,1234,12134,0,4282.0,71.705,4210.2,4353.7,111085,1110855,shift_bcf_1
+2024-06-21 13:49:36,SSSP,time,BCF,../data/graphs/shift3_aug_gor_1e6.txt,0,2,1,0,1,0,1,1,100,1234,0,1234,12134,0,11191.0,444.3,10747.0,11635.0,111075,1110748,shift_bcf_1
+2024-06-24 16:22:03,SSSP,time,BCF,../data/graphs/shift4_aug_gor_1e6.txt,0,2,1,0,1,0,1,1,100,1234,0,1234,12134,0,39341,2671.3,36670,42012,111076,1110748,shift_bcf_1

@@ -1,0 +1,76 @@
+# launch with:
+# cat ../data/queries/randl_queries.txt | parallel -j 4 {}
+
+# rand_label=0 that is, labeling happens with Dijkstra
+
+python3 exec_query.py randl_bfct_0_1 "SSSP time BCF ../data/graphs/big_aug_bfct_5e5.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=0
+python3 exec_query.py randl_bfct_0_2 "SSSP time BCF ../data/graphs/big_aug_bfct_1e6.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=0
+python3 exec_query.py randl_bfct_0_3 "SSSP time BCF ../data/graphs/big_aug_bfct_2e6.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=0
+python3 exec_query.py randl_bfct_0_4 "SSSP time BCF ../data/graphs/big_aug_bfct_5e6.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=0
+python3 exec_query.py randl_bfct_0_5 "SSSP time BCF ../data/graphs/big_aug_bfct_1e7.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=0
+python3 exec_query.py randl_bfct_0_6 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=0
+
+python3 exec_query.py randl_dfs_0_1 "SSSP time BCF ../data/graphs/big_aug_dfs_5e5.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=0
+python3 exec_query.py randl_dfs_0_2 "SSSP time BCF ../data/graphs/big_aug_dfs_1e6.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=0
+python3 exec_query.py randl_dfs_0_3 "SSSP time BCF ../data/graphs/big_aug_dfs_2e6.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=0
+python3 exec_query.py randl_dfs_0_4 "SSSP time BCF ../data/graphs/big_aug_dfs_5e6.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=0
+python3 exec_query.py randl_dfs_0_5 "SSSP time BCF ../data/graphs/big_aug_dfs_1e7.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=0
+python3 exec_query.py randl_dfs_0_6 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=0
+
+python3 exec_query.py randl_rd1_0_1 "SSSP time BCF ../data/graphs/big_aug_rd1_5e5.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=0
+python3 exec_query.py randl_rd1_0_2 "SSSP time BCF ../data/graphs/big_aug_rd1_1e6.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=0
+python3 exec_query.py randl_rd1_0_3 "SSSP time BCF ../data/graphs/big_aug_rd1_2e6.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=0
+python3 exec_query.py randl_rd1_0_4 "SSSP time BCF ../data/graphs/big_aug_rd1_5e6.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=0
+python3 exec_query.py randl_rd1_0_5 "SSSP time BCF ../data/graphs/big_aug_rd1_1e7.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=0
+python3 exec_query.py randl_rd1_0_6 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=0
+
+python3 exec_query.py randl_rd2_0_1 "SSSP time BCF ../data/graphs/big_aug_rd2_5e5.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=0
+python3 exec_query.py randl_rd2_0_2 "SSSP time BCF ../data/graphs/big_aug_rd2_1e6.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=0
+python3 exec_query.py randl_rd2_0_3 "SSSP time BCF ../data/graphs/big_aug_rd2_2e6.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=0
+python3 exec_query.py randl_rd2_0_4 "SSSP time BCF ../data/graphs/big_aug_rd2_5e6.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=0
+python3 exec_query.py randl_rd2_0_5 "SSSP time BCF ../data/graphs/big_aug_rd2_1e7.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=0
+python3 exec_query.py randl_rd2_0_6 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=0
+
+python3 exec_query.py randl_gor_0_1 "SSSP time BCF ../data/graphs/big_aug_gor_5e5.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=0
+python3 exec_query.py randl_gor_0_2 "SSSP time BCF ../data/graphs/big_aug_gor_1e6.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=0
+python3 exec_query.py randl_gor_0_3 "SSSP time BCF ../data/graphs/big_aug_gor_2e6.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=0
+python3 exec_query.py randl_gor_0_4 "SSSP time BCF ../data/graphs/big_aug_gor_5e6.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=0
+python3 exec_query.py randl_gor_0_5 "SSSP time BCF ../data/graphs/big_aug_gor_1e7.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=0
+python3 exec_query.py randl_gor_0_6 "SSSP time BCF ../data/graphs/big_aug_gor_2e7.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=0
+
+# rand_label=1 that is, labeling happens randomly
+
+python3 exec_query.py randl_bfct_1_1 "SSSP time BCF ../data/graphs/big_aug_bfct_5e5.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=1
+python3 exec_query.py randl_bfct_1_2 "SSSP time BCF ../data/graphs/big_aug_bfct_1e6.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=1
+python3 exec_query.py randl_bfct_1_3 "SSSP time BCF ../data/graphs/big_aug_bfct_2e6.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=1
+python3 exec_query.py randl_bfct_1_4 "SSSP time BCF ../data/graphs/big_aug_bfct_5e6.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=1
+python3 exec_query.py randl_bfct_1_5 "SSSP time BCF ../data/graphs/big_aug_bfct_1e7.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=1
+python3 exec_query.py randl_bfct_1_6 "SSSP time BCF ../data/graphs/big_aug_bfct_2e7.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=1
+
+python3 exec_query.py randl_dfs_1_1 "SSSP time BCF ../data/graphs/big_aug_dfs_5e5.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=1
+python3 exec_query.py randl_dfs_1_2 "SSSP time BCF ../data/graphs/big_aug_dfs_1e6.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=1
+python3 exec_query.py randl_dfs_1_3 "SSSP time BCF ../data/graphs/big_aug_dfs_2e6.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=1
+python3 exec_query.py randl_dfs_1_4 "SSSP time BCF ../data/graphs/big_aug_dfs_5e6.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=1
+python3 exec_query.py randl_dfs_1_5 "SSSP time BCF ../data/graphs/big_aug_dfs_1e7.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=1
+python3 exec_query.py randl_dfs_1_6 "SSSP time BCF ../data/graphs/big_aug_dfs_2e7.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=1
+
+python3 exec_query.py randl_rd1_1_1 "SSSP time BCF ../data/graphs/big_aug_rd1_5e5.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=1
+python3 exec_query.py randl_rd1_1_2 "SSSP time BCF ../data/graphs/big_aug_rd1_1e6.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=1
+python3 exec_query.py randl_rd1_1_3 "SSSP time BCF ../data/graphs/big_aug_rd1_2e6.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=1
+python3 exec_query.py randl_rd1_1_4 "SSSP time BCF ../data/graphs/big_aug_rd1_5e6.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=1
+python3 exec_query.py randl_rd1_1_5 "SSSP time BCF ../data/graphs/big_aug_rd1_1e7.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=1
+python3 exec_query.py randl_rd1_1_6 "SSSP time BCF ../data/graphs/big_aug_rd1_2e7.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=1
+
+python3 exec_query.py randl_rd2_1_1 "SSSP time BCF ../data/graphs/big_aug_rd2_5e5.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=1
+python3 exec_query.py randl_rd2_1_2 "SSSP time BCF ../data/graphs/big_aug_rd2_1e6.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=1
+python3 exec_query.py randl_rd2_1_3 "SSSP time BCF ../data/graphs/big_aug_rd2_2e6.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=1
+python3 exec_query.py randl_rd2_1_4 "SSSP time BCF ../data/graphs/big_aug_rd2_5e6.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=1
+python3 exec_query.py randl_rd2_1_5 "SSSP time BCF ../data/graphs/big_aug_rd2_1e7.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=1
+python3 exec_query.py randl_rd2_1_6 "SSSP time BCF ../data/graphs/big_aug_rd2_2e7.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=1
+
+python3 exec_query.py randl_gor_1_1 "SSSP time BCF ../data/graphs/big_aug_gor_5e5.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=1
+python3 exec_query.py randl_gor_1_2 "SSSP time BCF ../data/graphs/big_aug_gor_1e6.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=1
+python3 exec_query.py randl_gor_1_3 "SSSP time BCF ../data/graphs/big_aug_gor_2e6.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=1
+python3 exec_query.py randl_gor_1_4 "SSSP time BCF ../data/graphs/big_aug_gor_5e6.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=1
+python3 exec_query.py randl_gor_1_5 "SSSP time BCF ../data/graphs/big_aug_gor_1e7.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=1
+python3 exec_query.py randl_gor_1_6 "SSSP time BCF ../data/graphs/big_aug_gor_2e7.txt 0 1" cutedges=5 k_factor=40 diam_apprx=1 rand_label=1

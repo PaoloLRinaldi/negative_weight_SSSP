@@ -1,0 +1,6 @@
+timestamp,alg_goal,exp_type,alg_name,filename,source,reps,use_lazy,init_kappa,k_factor,rand_label,fixdagedges,cutedges,rec_limit,cutedgesseed,diam_apprx,ol_seed,il_seed,eg_sort_scc,avg_time,std,min,max,n,m,exp_name
+2024-06-18 17:38:01,SSSP,time,BCF,../data/graphs/big_aug_gor_1e7.txt,0,1,1,0,1,0,1,2,100,1234,0,1234,12134,0,203520,0,203520,203520,1111111,9999984,param_ce_3
+2024-06-19 15:54:18,SSSP,time,BCF,../data/graphs/big_aug_gor_1e7.txt,0,1,1,0,1,0,1,2,100,1234,0,1234,12134,0,91812,0,91812,91812,1111111,9999984,param_ce_3
+2024-06-19 15:56:29,SSSP,time,BCF,../data/graphs/big_aug_gor_1e7.txt,0,1,1,0,1,0,1,2,100,1234,0,1234,12134,0,114500,0,114500,114500,1111111,9999984,param_ce_3
+2024-06-19 15:59:24,SSSP,time,BCF,../data/graphs/big_aug_gor_1e7.txt,0,1,1,0,1,0,1,2,100,1234,0,1234,12134,1,115100,0,115100,115100,1111111,9999984,param_ce_3
+2024-06-19 16:48:18,SSSP,time,BCF,../data/graphs/big_aug_gor_1e7.txt,0,1,1,0,1,0,1,2,100,1234,0,1234,12134,0,118650,0,118650,118650,1111111,9999984,param_ce_3
